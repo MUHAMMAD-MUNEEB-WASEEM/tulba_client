@@ -1,11 +1,13 @@
 import React from 'react'
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button} from "react-bootstrap";
 import { GiElvenCastle, GiCastle, GiNestedHearts, GiLargeDress } from "react-icons/gi";
 import styles from "/styles/vendors/vendor.module.scss";
 import Image from "next/image";
 import Vector from "public/assests/store/weddingcard.png";
 import { AiFillStar, AiOutlineUsergroupAdd } from "react-icons/ai";
 import Pagination from 'react-bootstrap/Pagination';
+// import Button from "components/form/button";
+import stylesButton from "/styles/modal/modal.module.scss";
 
 let active = 2;
 let items = [];
@@ -153,6 +155,17 @@ const Wedcard = () => {
 
                                 </div>
 
+                                <div className="flex flex-row justify-evenly my-1 mx-1">
+                                    <div>
+                                        <Button className={stylesButton.btn} variant="danger">Buy Now</Button>
+                                    </div>
+
+                                    <div >
+                                        <Button className={stylesButton.btn} variant="danger" >Add to Cart</Button>
+                                    </div>
+
+                                </div>
+
                             </Col>
                             <Col lg={4} md={6} className="my-2">
                                 <div className={`${styles.wed_card}`}>
@@ -189,6 +202,17 @@ const Wedcard = () => {
 
                                 </div>
 
+                                <div className="flex flex-row justify-evenly my-1 mx-1">
+                                    <div>
+                                        <Button className={stylesButton.btn} variant="danger">Buy Now</Button>
+                                    </div>
+
+                                    <div >
+                                        <Button className={stylesButton.btn} variant="danger" >Add to Cart</Button>
+                                    </div>
+
+                                </div>
+
                             </Col>
                             <Col lg={4} md={6} className="my-2">
                                 <div className={`${styles.wed_card}`}>
@@ -222,6 +246,17 @@ const Wedcard = () => {
                                     <div className={`mx-1 ${styles.circle_blue}`}></div>
                                     <div className={`mx-1 ${styles.circle_green}`}></div>
                                     <div className={`mx-1 ${styles.circle_pink}`}></div>
+
+                                </div>
+
+                                <div className="flex flex-row justify-evenly my-1 mx-1">
+                                    <div>
+                                        <Button className={stylesButton.btn} variant="danger">Buy Now</Button>
+                                    </div>
+
+                                    <div >
+                                        <Button className={stylesButton.btn} variant="danger" >Add to Cart</Button>
+                                    </div>
 
                                 </div>
 
@@ -262,6 +297,17 @@ const Wedcard = () => {
 
                                 </div>
 
+                                <div className="flex flex-row justify-evenly my-1 mx-1">
+                                    <div>
+                                        <Button className={stylesButton.btn} variant="danger">Buy Now</Button>
+                                    </div>
+
+                                    <div >
+                                        <Button className={stylesButton.btn} variant="danger" >Add to Cart</Button>
+                                    </div>
+
+                                </div>
+
                             </Col>
                             <Col lg={4} md={6} className="my-2">
                                 <div className={`${styles.wed_card}`}>
@@ -298,6 +344,17 @@ const Wedcard = () => {
 
                                 </div>
 
+                                <div className="flex flex-row justify-evenly my-1 mx-1">
+                                    <div>
+                                        <Button className={stylesButton.btn} variant="danger">Buy Now</Button>
+                                    </div>
+
+                                    <div >
+                                        <Button className={stylesButton.btn} variant="danger" >Add to Cart</Button>
+                                    </div>
+
+                                </div>
+
                             </Col>
                             <Col lg={4} md={6} className="my-2">
                                 <div className={`${styles.wed_card}`}>
@@ -331,6 +388,17 @@ const Wedcard = () => {
                                     <div className={`mx-1 ${styles.circle_blue}`}></div>
                                     <div className={`mx-1 ${styles.circle_green}`}></div>
                                     <div className={`mx-1 ${styles.circle_pink}`}></div>
+
+                                </div>
+
+                                <div className="flex flex-row justify-evenly my-1 mx-1">
+                                    <div>
+                                        <Button className={stylesButton.btn} variant="danger">Buy Now</Button>
+                                    </div>
+
+                                    <div >
+                                        <Button className={stylesButton.btn} variant="danger" >Add to Cart</Button>
+                                    </div>
 
                                 </div>
 
@@ -371,6 +439,17 @@ const Wedcard = () => {
 
                                 </div>
 
+                                <div className="flex flex-row justify-evenly my-1 mx-1">
+                                    <div>
+                                        <Button className={stylesButton.btn} variant="danger">Buy Now</Button>
+                                    </div>
+
+                                    <div >
+                                        <Button className={stylesButton.btn} variant="danger" >Add to Cart</Button>
+                                    </div>
+
+                                </div>
+
                             </Col>
                             <Col lg={4} md={6} className="my-2">
                                 <div className={`${styles.wed_card}`}>
@@ -404,6 +483,17 @@ const Wedcard = () => {
                                     <div className={`mx-1 ${styles.circle_blue}`}></div>
                                     <div className={`mx-1 ${styles.circle_green}`}></div>
                                     <div className={`mx-1 ${styles.circle_pink}`}></div>
+
+                                </div>
+
+                                <div className="flex flex-row justify-evenly my-1 mx-1">
+                                    <div>
+                                        <Button className={stylesButton.btn} variant="danger">Buy Now</Button>
+                                    </div>
+
+                                    <div >
+                                        <Button className={stylesButton.btn} variant="danger" >Add to Cart</Button>
+                                    </div>
 
                                 </div>
 
@@ -440,6 +530,17 @@ const Wedcard = () => {
                                     <div className={`mx-1 ${styles.circle_blue}`}></div>
                                     <div className={`mx-1 ${styles.circle_green}`}></div>
                                     <div className={`mx-1 ${styles.circle_pink}`}></div>
+                                </div>
+
+                                <div className="flex flex-row justify-evenly my-1 mx-1">
+                                    <div>
+                                        <Button className={stylesButton.btn} variant="danger">Buy Now</Button>
+                                    </div>
+
+                                    <div >
+                                        <Button className={stylesButton.btn} variant="danger" >Add to Cart</Button>
+                                    </div>
+
                                 </div>
 
                             </Col>
