@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import "../fonts/font.scss";
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+
+.asthetical {
+  h2 {
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 66px;
+    text-transform: capitalize;
+    color: #000000;
+  }
+  h6 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #f85757;
+  }
+  span {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  p {
+    font-family:  $GiloryRegular;
+    font-size: 20px;
+    line-height: 10px;
+    text-transform: capitalize;
+    color: #666666;
+    margin-left: 4px;
+  }
+  h5 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+    color: #000000;
+  }
+  .check {
+    font-family: $GiloryRegular;
+    font-size: 20px;
+    line-height: 23px;
+    color: #605b5b;
+    font-weight: lighter;
+    margin: 12px;
+  }
+  input {
+    margin-bottom: 22px;
+  }
+  .as_btn {
+    background: #fef0f0;
+    border-radius: 5px;
+    border: none;
+    // border: 2px solid #f85757;
+    margin-top: 30px;
+    p {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #f85757;
+    }
+  }
+}
+.save_date {
+  h4 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 18px;
+    color: #000000;
+  }
+  h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 18px;
+    color: #000000;
+  }
+  .head {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #f85757;
+  }
+  span {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #4d4d4d;
+  }
+  h5 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+  }
+  h3 {
+    font-family: $GilorySemiBold;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: capitalize;
+    color: #404040;
+    font-weight: 600;
+  }
+  .price {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    color: #f85757;
+  }
+  a {
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .box {
+    background: #fef0f0;
+    border-radius: 10px;
+    width: 400px;
+    padding: 16px;
+    margin: 20px 0px;
+
+    p {
+      font-family:$GiloryRegular;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: capitalize;
+      color: #868484;
+    }
+    h3 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 48px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #f85757;
+    }
+  }
+  .total_box {
+    border-radius: 10px;
+    width: 400px;
+    padding: 16px;
+    margin: 20px 0px;
+    border: 1px solid #111;
+    h3 {
+      font-family: $GilorySemiBold;
+      font-size: 22px;
+      line-height: 38px;
+      text-transform: capitalize;
+      color: #000000;
+    }
+    span {
+      font-family:$GiloryRegular;
+      font-size: 14px;
+      line-height: 12px;
+      color: #868484;
+    }
+    .check_btn {
+      background: #f85757;
+      border: 0.7px solid #f85757;
+      border-radius: 5px;
+      color: #fff;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 30px;
+      text-transform: capitalize;
+      margin: 20px;
+    }
+    .draft_btn {
+      background: #ffffff;
+      border: 0.7px solid #f85757;
+      border-radius: 5px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 30px;
+      text-transform: capitalize;
+      color: #f85757;
+      width: 140px;
+
+    }
+  }
+  .mail{
+    h4{
+        font-family: $GiloryBold;
+font-size: 24px;
+line-height: 28px;
+text-transform: capitalize;
+color: #000000;
+    }
+    p{
+        font-family:$GiloryRegular;
+font-size: 19px;
+line-height: 30px;
+color: #000000;
+a{
+    color: #f85757 !important;
+    font-weight: 600;
+}
+    }
+    
+  }
+}

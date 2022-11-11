@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import "../fonts/font.scss";
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+.vendors {
+  h1 {
+    font-family: $GiloryBold;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #404040;
+  }
+
+  .icon {
+    background: #fef0f0;
+    height: 50px;
+    width: 50px;
+    color: #f85757;
+    border-radius: 100px;
+    font-size: 10px;
+    margin: 8px;
+    padding: 10px;
+  }
+
+  .actvelink {
+    background: #f85757;
+
+    span {
+      color: #fff;
+      font-family: $GiloryRegular;
+      font-size: 14px;
+      line-height: 20px;
+      text-transform: capitalize;
+      margin: 16px;
+      padding: 10px;
+    }
+  }
+
+  span {
+    font-family: $GiloryRegular;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: capitalize;
+    margin: 16px;
+    padding: 10px;
+    color: #000000;
+    text-align: left;
+  }
+
+  .bg-light {
+    background: #fafafa;
+    border-radius: 25px;
+  }
+}
+
+.input {
+  background: #ffffff;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  outline: none;
+}
+
+.location {
+  background: #f5f6f7 !important;
+  border: none !important;
+  box-shadow: none !important;
+   label{
+    font-family: $GiloryBold !important;
+  font-size: 20px !important;
+  line-height: 23px !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase;
+  color: #404040;
+  
+   }
+} 
+
+
+.inputbtn {
+  background: #f85757;
+  border-radius: 15px;
+  border: 2px solid #f85757;
+
+  &:hover {
+    color: #f85757;
+    background: #fef0f0;
+    border: none;
+    border: 1px solid #f85757;
+  }
+
+  &:focus {
+    color: #f85757;
+    background: #fef0f0;
+    border: none;
+    box-shadow: none;
+    border: 1px solid #f85757;
+  }
+}
+
+// .opt
+//   :focus-visible{
+//     background: #f85757 !important;
+
+// }
+.vendorbanner_img {
+  background-image: url("../../public/assests/vendors/banner.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.wed_card {
+  background: rgba(236, 236, 236, 0.9);
+  border-radius: 0px;
+  width: 280px;
+  height: 300px;
+}
+
+.wed_content {
+  width: 280px;
+
+  h1 {
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    text-transform: capitalize;
+
+    color: #000000;
+  }
+
+  .star {
+    color: #ffc200;
+    font-size: 30px;
+  }
+
+  .myspan {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  h4 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  h6 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    color: #000000;
+  }
+}
+
+.circle_blue {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background: #476fff;
+}
+
+.circle_green {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background: #2ba730;
+}
+
+.circle_pink {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background: #ff477e;
+}
+
+.colours {
+  h3 {
+    font-family: $GiloryBold;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #404040;
+    text-align: center;
+  }
+
+  p {
+    font-size: 17px;
+    margin-top: 3px;
+  }
+}
