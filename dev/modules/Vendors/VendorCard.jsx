@@ -98,25 +98,25 @@ const VendorCard = () => {
                                 </li>
                             </ul>
                             <FloatingLabel
-                                    controlId="floatingSelectGrid"
-                                    label=" Location"
+                                controlId="floatingSelectGrid"
+                                label=" Location"
+                            >
+                                <Form.Select
+                                    aria-label="Floating label select example "
+                                    className={styles.location}
                                 >
-                                    <Form.Select
-                                        aria-label="Floating label select example "
-                                        className={styles.location}
-                                    >
 
-                                        <option>In (E.g. Karachi)</option>
-                                        <option className="opt" value="Islamabad">Islamabad</option>
-                                        <option  className={styles.opt} value="Karachi">Karachi</option>
-                                        <option  className={styles.opt} value="Lahore">Lahore</option>
-                                    </Form.Select>
-                                </FloatingLabel>
+                                    <option>In (E.g. Karachi)</option>
+                                    <option className="opt" value="Islamabad">Islamabad</option>
+                                    <option className={styles.opt} value="Karachi">Karachi</option>
+                                    <option className={styles.opt} value="Lahore">Lahore</option>
+                                </Form.Select>
+                            </FloatingLabel>
                         </nav>
                     </Col>
                     <Col lg={9} className={styles.cardss}>
                         <Row className="g-2 my-5 mx-3">
-                            <Col md={5} className="btstrp p-0">
+                            {/* <Col md={5} className="btstrp p-0">
                                 <FloatingLabel
                                     controlId="floatingInputGrid"
                                     label="Email address">
@@ -139,15 +139,15 @@ const VendorCard = () => {
 
                                         <option>In (E.g. Karachi)</option>
                                         <option className="opt" value="Islamabad">Islamabad</option>
-                                        <option  className={styles.opt} value="Karachi">Karachi</option>
-                                        <option  className={styles.opt} value="Lahore">Lahore</option>
+                                        <option className={styles.opt} value="Karachi">Karachi</option>
+                                        <option className={styles.opt} value="Lahore">Lahore</option>
                                     </Form.Select>
                                 </FloatingLabel>
                             </Col>
                             <Col md={2} className="p-0">
                                 <Button className={`p-3 ${styles.inputbtn}`}>Search here</Button>
-                            </Col>
-                        </Row>
+                            </Col> */}
+                        </Row> 
                         <Row>
                             <Col>
                                 <div className={` d-flex justify-content-start ${vendor.tools}`}>

@@ -11,16 +11,17 @@ import Link from "next/link";
 import { Container, Row, Col } from "react-bootstrap";
 
 const Header = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [modalShow, setModalShow] = React.useState(false);
 
+
   return (
-    <Container>
+    <Container fluid className='px-5'>
       <MyVerticallyCenteredModal
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
-      <div className={`w-full ${style.Header_section}`}>
+      <div className={`  ${style.Header_section} w-full border-2 border-black`}>
         <div className={style.nested_header}>
           <div
             className={`flex items-center justify-between  ${style.header_top}`}
@@ -31,8 +32,8 @@ const Header = () => {
             </div>
             {/* <div className={style.headerTop_vendor}  onClick={() => setModalShow(true)}>Are You A Vendor? */}
             {/* </div> */}
-            <div className={style.headerTop_vendor} style={{textDecoration:'none', color:"black"}} ><Link style={{textDecoration:'none'}} className="text-black no-underline" href="/Vendor">Are You A Vendor?</Link> 
-            </div> 
+            <div className={style.headerTop_vendor} style={{ textDecoration: 'none', color: "black" }} ><Link href="/Vendor"><a style={{ textDecoration: 'none !important', color: "black" }} > Are You A Vendor?</a></Link>
+            </div>
           </div>
 
           <div
@@ -44,7 +45,7 @@ const Header = () => {
                   src={tulbalogo}
                   alt="tulbalogo"
                   loading="lazy"
-                  // className="h-12 w-12"
+                // className="h-12 w-12"
                 />
               </Link>
             </div>
@@ -86,7 +87,7 @@ const Header = () => {
                   <a href="#/">Event Website</a>
                 </li>
                 <li>
-                  <a href="#/">Shop Invitation</a>
+                  <Link href={"/store"} >Shop Invitation</Link>
                 </li>
                 <li>
                   <a href="#/">Nikkah Templates</a>{" "}
@@ -103,15 +104,14 @@ const Header = () => {
                 </Link>
               </div>
               {/* Cart */}
-              <div  onClick={() => setModalShow(true)} className={`cursor-pointer ${style.cart}`}>
+              <div onClick={() => setModalShow(true)} className={`cursor-pointer ${style.cart}`}>
                 <Image src={cart} alt="cart" loading="lazy" />
               </div>
             </div>
             <div
               onClick={() => setOpen(true)}
-              className={`${
-                open ? style.menu_btn : `${style.menu_btn} ${style.menu_btn}`
-              }`}
+              className={`${open ? style.menu_btn : `${style.menu_btn} ${style.menu_btn}`
+                }`}
             >
               <div className={style.menu_childSidebar}></div>
             </div>

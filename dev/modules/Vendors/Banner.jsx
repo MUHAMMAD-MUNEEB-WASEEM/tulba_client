@@ -26,9 +26,9 @@ const Banner = () => {
                 Browse through the many vendors of your choice and <br />
                 get the ultimate venue for your ultmiate wedding
               </p>
-              <Button
+              {/* <Button
                 className={`my-4 ${styles.btn}`}
-              >Explore Vendors</Button>
+              >Explore Vendors</Button> */}
             </div>
           </Col>
           <Col lg={6} className="p-0">

@@ -7,6 +7,9 @@ import Rectangle2 from "public/assests/home_img/Rectangle 374.svg";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
 import Pagination from 'react-bootstrap/Pagination';
+import AddGuestModal from 'components/popup/guest_popup'
+import { useState } from "react";
+
 
 let active = 2;
 let items = [];
@@ -19,8 +22,13 @@ for (let number = 1; number <= 5; number++) {
 }
 
 function BasicExample() {
+  const [modalShow, setModalShow] = useState(false);
   return (
     <Container fluid className={` my-5 ${styles.rsvp_page}`}>
+      <AddGuestModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
       <Row>
         <Col lg={8} className={`p-0 ${styles.rsvp}`}>
           <Row>
@@ -32,7 +40,7 @@ function BasicExample() {
               <p className="">Your Invitations to the guests details</p>
             </Col>
             <Col lg={5} className="p-0">
-              <Button className={` ${styles.btn}`}>
+              <Button onClick={()=>setModalShow(true)} className={` ${styles.btn}`}>
                 + Add New Guest
               </Button>
             </Col>
