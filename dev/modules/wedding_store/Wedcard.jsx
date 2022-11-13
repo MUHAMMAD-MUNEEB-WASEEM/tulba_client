@@ -1,13 +1,12 @@
-import React from 'react'
-import { Container, Row, Col, Button} from "react-bootstrap";
-import { GiElvenCastle, GiCastle, GiNestedHearts, GiLargeDress } from "react-icons/gi";
-import styles from "/styles/vendors/vendor.module.scss";
+import React, { useState } from 'react'
 import Image from "next/image";
-import Vector from "public/assests/store/weddingcard.png";
-import { AiFillStar, AiOutlineUsergroupAdd } from "react-icons/ai";
 import Pagination from 'react-bootstrap/Pagination';
-// import Button from "components/form/button";
+import styles from "/styles/vendors/vendor.module.scss";
+import Vector from "public/assests/store/weddingcard.png";
 import stylesButton from "/styles/modal/modal.module.scss";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import { AiFillStar, AiOutlineUsergroupAdd, AiOutlineRight, AiOutlineDown } from "react-icons/ai";
+import { GiElvenCastle, GiCastle, GiNestedHearts, GiLargeDress } from "react-icons/gi";
 
 let active = 2;
 let items = [];
@@ -19,101 +18,110 @@ for (let number = 1; number <= 5; number++) {
     );
 }
 const Wedcard = () => {
+    const [paper, showPaper] = useState(false)
+    const [price, showPrice] = useState(false)
+    const [type, showType] = useState(false)
+
     return (
-        <div>
+        <div className='border'>
             <Container fluid>
                 <Row>
-                    <Col lg={3} className={styles.vendors}>
-                        <nav className="navbar-light bg-light">
-                            <ul className="navbar-nav flex-column mr-auto">
-                                <h1 className="text-center my-5">Categories</h1>
-
-                                <li className={`nav-item active ${styles.actvelink}`}>
-                                    <a
-                                        className={"nav-link d-flex justify-content-start"}
-                                        href="#"
-                                    >
-                                        <GiElvenCastle
-                                            className={styles.icon}
-                                        />
-                                        <span>
-                                            Wedding Planner
-                                        </span>
-                                    </a>
-                                </li>
-                                <li className={"nav-item active "}>
-                                    <a
-                                        className={"nav-link d-flex justify-content-start"}
-                                        href="#"
-                                    >
-                                        <GiCastle
-                                            className={styles.icon}
-                                        />
-                                        <span>
-                                            Catering ( 11 )
-                                        </span>
-                                    </a>
-                                </li>
-                                <li className={"nav-item "}>
-                                    <a
-                                        className={"nav-link d-flex justify-content-start"}
-                                        href="#"
-                                    >
-                                        <GiNestedHearts
-                                            className={styles.icon}
-                                        />
-                                        <span>
-                                            Decoration ( 8 )
-                                        </span>
-                                    </a>
-                                </li>
-                                <li className={"nav-item "}>
-                                    <a
-                                        className={"nav-link d-flex justify-content-start"}
-                                        href="#"
-                                    >
-                                        <GiLargeDress
-                                            className={styles.icon}
-                                        />
-                                        <span>
-                                            Dresses ( 55 )
-                                        </span>
-                                    </a>
-                                </li>
-
-                                <li className={"nav-item active "}>
-                                    <a
-                                        className={"nav-link d-flex justify-content-start"}
-                                        href="#"
-                                    >
-                                        <GiElvenCastle
-                                            className={styles.icon}
-                                        />
-                                        <span>
-                                            Venue ( 20 )
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-
-                            <div className={styles.colours}>
-                                <h3 className='my-5'>Colours</h3>
-                                <div className="d-flex">
-                                    <div className={`my-2 mx-5 ${styles.circle_blue}`}></div>
-                                    <p>Blue</p>
-                                </div>
-                                <div className="d-flex">
-                                    <div className={`my-2 mx-5 ${styles.circle_green}`}></div>
-                                    <p>Green</p>
-                                </div>
-                                <div className="d-flex">
-                                    <div className={`my-2 mx-5 ${styles.circle_pink}`}></div>
-                                    <p>Pink</p>
-                                </div>
+                    <Col md={3} className={styles.filterContainer}>
+                        <h1>Categories</h1>
+                        <div>
+                            <div onClick={() => showPaper(!paper)} className={`${styles.sideBarList} ${paper && styles.actvelink} `}>
+                                {!paper ?
+                                    <AiOutlineRight size={20} />
+                                    :
+                                    <AiOutlineDown size={20} />
+                                }
+                                <span>  Paper </span>
                             </div>
-                        </nav>
 
+                            {paper &&
+                                <div className={styles.expandable} >
+                                    <div>
+                                        <input type='checkbox' />
+                                        <span>Matte</span>
+                                    </div>
+                                    <div>
+                                        <input type='checkbox' />
+                                        <span>Glossy</span>
+                                    </div>
+                                    <div>
+                                        <input type='checkbox' />
+                                        <span>Handmade</span>
+                                    </div>
+                                    <div>
+                                        <input type='checkbox' />
+                                        <span>Mylar</span>
+                                    </div>
+                                    <div>
+                                        <input type='checkbox' />
+                                        <span>Recycled</span>
+                                    </div>
+                                    <div>
+                                        <input type='checkbox' />
+                                        <span>Parchment</span>
+                                    </div>
+
+                                </div>
+                            }
+                            <div onClick={() => showPrice(!price)} className={`${styles.sideBarList} ${price && styles.actvelink} `}>
+                                {!price ?
+                                    <AiOutlineRight size={20} />
+                                    :
+                                    <AiOutlineDown size={20} />
+                                }
+                                <span>  Price </span>
+                            </div>
+                            {price &&
+                                <div className={styles.expandable} >
+                                    <div>
+                                        <input type='checkbox' />
+                                        <span>$1-$10</span>
+                                    </div>
+                                    <div>
+                                        <input type='checkbox' />
+                                        <span>$11-$20</span>
+                                    </div>
+                                    <div>
+                                        <input type='checkbox' />
+                                        <span>$20-$30</span>
+                                    </div>
+                                    <div>
+                                        <input type='checkbox' />
+                                        <span>$30-$50</span>
+                                    </div>
+                                </div>
+                            }
+                            <div onClick={() => showType(!type)} className={`${styles.sideBarList} ${type && styles.actvelink} `}>
+                                {!type ?
+                                    <AiOutlineRight size={20} />
+                                    :
+                                    <AiOutlineDown size={20} />
+                                }
+                                <span>Type </span>
+                            </div>
+                            {type &&
+                                <div className={styles.expandable} >
+                                    <div>
+                                        <input className={styles.input} type='checkbox' />
+                                        <span>Cards</span>
+                                    </div>
+                                    <div>
+                                        <input type='checkbox' />
+                                        <span>Boxed Gifting</span>
+                                    </div>
+                                    <div>
+                                        <input type='checkbox' />
+                                        <span>Novel Concepts</span>
+                                    </div>
+                                </div>
+                            }
+                        </div>
                     </Col>
+
                     <Col lg={9}>
                         <div className='d-flex align-items-center'>
                             <h1>Shop Our hand crafted Invitations</h1>
@@ -261,7 +269,6 @@ const Wedcard = () => {
                                 </div>
 
                             </Col>
-
                             <Col lg={4} md={6} className="my-2">
                                 <div className={` ${styles.wed_card}`}>
                                     <Image
@@ -403,7 +410,6 @@ const Wedcard = () => {
                                 </div>
 
                             </Col>
-
                             <Col lg={4} md={6} className="my-2">
                                 <div className={` ${styles.wed_card}`}>
                                     <Image
@@ -550,7 +556,6 @@ const Wedcard = () => {
                                 </div>
                             </Col>
                         </Row>
-
                     </Col>
                 </Row>
             </Container>

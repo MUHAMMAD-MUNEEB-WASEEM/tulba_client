@@ -8,7 +8,7 @@ import Button from "components/form/button";
 import MyVerticallyCenteredModal from "components/popup/profile_popup";
 import Sidebar from "layout/sidebar";
 import Link from "next/link";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col,Navbar } from "react-bootstrap";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -16,11 +16,13 @@ const Header = () => {
 
 
   return (
-    <Container fluid className='px-5'>
+    // <Container fluid className='px-5'>
+    <Container>
       <MyVerticallyCenteredModal
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
+
       <div className={`  ${style.Header_section} w-full border-2 border-black`}>
         <div className={style.nested_header}>
           <div
@@ -35,7 +37,7 @@ const Header = () => {
             <div className={style.headerTop_vendor} style={{ textDecoration: 'none', color: "black" }} ><Link href="/Vendor"><a style={{ textDecoration: 'none !important', color: "black" }} > Are You A Vendor?</a></Link>
             </div>
           </div>
-
+<Navbar>
           <div
             className={`flex items-center justify-between ${style.header_bottom}`}
           >
@@ -69,12 +71,12 @@ const Header = () => {
                 </li>
                 <li className={style.planning_tools}>
                   <span className="flex gap-1 items-center">
-                    <Link href="/">Planning Tools</Link> <IoIosArrowDown />
+                    <Link href="/event">Planning Tools</Link> <IoIosArrowDown />
                   </span>
                   <ul className={style.nav__submenu}>
-                    <li className={style.nav__submenu_item}>
+                    {/* <li className={style.nav__submenu_item}>
                       <a>Events</a>
-                    </li>
+                    </li> */}
                     <li className={style.nav__submenu_item}>
                       <a>Reception</a>
                     </li>
@@ -116,6 +118,7 @@ const Header = () => {
               <div className={style.menu_childSidebar}></div>
             </div>
           </div>
+          </Navbar>
           {/* <button onClick={() => setOpen(!open)}>Click</button> */}
         </div>
         <div className={style.sidebar_option}>

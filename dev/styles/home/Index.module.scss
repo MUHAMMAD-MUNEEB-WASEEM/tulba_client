@@ -11,7 +11,6 @@
   @media (max-width: 767px) {
     // order: 1;
     display: none;
-
   }
 }
 
@@ -21,7 +20,6 @@
     // order: 2;
     // display: none;
   }
-  
 }
 
 .top_head {
@@ -41,7 +39,6 @@
   }
 
   .headspan {
-
     font-family: "DM Serif Display";
     font-style: normal;
     font-weight: 400;
@@ -58,7 +55,6 @@
   }
 
   .headspan2 {
-
     font-family: "DM Serif Display";
     font-style: normal;
     font-weight: 400;
@@ -80,7 +76,7 @@
     width: 30px;
     margin-right: 8px;
     @media (max-width: 767px) {
-      width:15px;
+      width: 15px;
     }
   }
 
@@ -100,12 +96,10 @@
     width: 150px;
 
     &:hover {
-
       color: #f85757;
       background: #fef0f0;
       border: none;
       border: 1px solid #f85757;
-
     }
 
     @media (max-width: 767px) {
@@ -139,12 +133,11 @@
     border-radius: 100px;
     background-color: #f85757;
   }
-  .form{
+  .form {
     // margin-left: 90px;
     @media (max-width: 768px) {
       margin-left: 0px;
       width: 100%;
-
     }
   }
 
@@ -213,14 +206,14 @@
 /////////////////// Faqs styling
 .faq {
   margin: 24px;
-
+  overflow: hidden !important;
+  position: relative !important;
   span {
     font-family: "$GiloryRegular";
     font-size: 18px;
     line-height: 40px;
     color: #404040;
   }
-
   .mobilefaqs {
     @media (max-width: 767px) {
       display: flex;
@@ -238,7 +231,6 @@
       line-height: 30px;
     }
   }
-
   p {
     font-family: $GiloryRegular;
     font-size: 18px;
@@ -265,26 +257,64 @@
       line-height: 30px;
     }
   }
-  @media (max-width:425px) {
+  @media (max-width: 425px) {
     margin: 0px;
   }
 }
+.faqCardsFull {
+  height: 700px !important;
+  background-image: linear-gradient(
+    rgb(255, 255, 255) 75%,
+    rgba(231, 230, 230, 0.9)
+  );
+}
+.faqCardsHalf {
+  height: 400 !important;
+}
+.faqButton {
+  display: flex;
+  justify-content: center;
+
+  .pulse {
+    position: relative;
+    bottom: 0;
+    margin-left: -25px;
+    height: 50px;
+    width: 50px;
+    @-webkit-keyframes bounce {
+      0% {
+        bottom: 5px;
+      }
+      25%,
+      75% {
+        bottom: 15px;
+      }
+      50% {
+        bottom: 20px;
+      }
+      100% {
+        bottom: 0;
+      }
+    }
+      -webkit-animation: bounce 1s infinite;
+    }
+  }
+
 
 /////////////////////////////////// Template style
-.ImgOrder1{
-@media (max-width: 767px) {
-  order: 2;
-  // display: none;
+.ImgOrder1 {
+  @media (max-width: 767px) {
+    order: 2;
+    // display: none;
+  }
 }
-}
-.ImgOrder2{
-@media (max-width: 767px) {
-  order: 1;
-  // display: none;
-}
+.ImgOrder2 {
+  @media (max-width: 767px) {
+    order: 1;
+    // display: none;
+  }
 }
 .temp {
-  
   h2 {
     font-family: "DM Serif Display";
     font-style: normal;
@@ -299,14 +329,14 @@
       line-height: 30px;
     }
   }
-  button{
-    border: 'none' !important;
-  background: '#fff' !important;
-  color: '#0e0e0e' !important;
-  text-decoration: 'underline' !important;
-  font-size: '14px' !important;
-  font-weight: 'bold' !important;
-  padding: '2px' !important
+  button {
+    border: "none" !important;
+    background: "#fff" !important;
+    color: "#0e0e0e" !important;
+    text-decoration: "underline" !important;
+    font-size: "14px" !important;
+    font-weight: "bold" !important;
+    padding: "2px" !important;
   }
 
   li::before {
@@ -324,15 +354,15 @@
     line-height: 36px;
     letter-spacing: 0.007em;
     color: #404040;
-    button{
+    button {
       border: none !important;
       background: #fff !important;
       color: #0e0e0e;
       text-decoration: underline;
       font-size: 14px;
       font-weight: bold;
-      padding: 2px  
-     }
+      padding: 2px;
+    }
   }
 
   .head {
@@ -360,9 +390,7 @@
       font-size: 14px;
       line-height: 30px;
       margin-top: -65px;
-
     }
-    
   }
   .background {
     background-image: url("../../public/assests/home_img/Ellipse\ 1381.svg");
@@ -371,11 +399,12 @@
     position: relative;
     height: 200px;
     // width: 190px;
-    .image{
+    .image {
       object-fit: contain;
       width: 100% !important;
       position: relative !important;
-      height: unset !important;    }
+      height: unset !important;
+    }
   }
 
   .background_blue {
@@ -384,8 +413,6 @@
     background-repeat: no-repeat;
     height: 350px;
   }
-  
-  
 }
 
 ////////////////////// Plan
@@ -433,7 +460,7 @@
 
 .redbox {
   margin: 24px 0;
-  
+
   .back {
     // background-image: url("../../public/assests/home_img/Ellipse\ 1381.svg");
     // background-size: cover;
@@ -447,24 +474,21 @@
       height: 150px;
       width: 150px;
     }
-    img{
-    position: absolute;
-    top: -40px !important;
-    left: -110px !important;
-    @media (max-width: 767px) {
-      top: 0px !important;
+    img {
+      position: absolute;
+      top: -40px !important;
+      left: -110px !important;
+      @media (max-width: 767px) {
+        top: 0px !important;
         left: 0px !important;
+      }
     }
-    
-    }
-    span{
+    span {
       @media (max-width: 767px) {
         height: 150px !important;
         width: 150px !important;
       }
     }
-
-
   }
 
   .box {
@@ -504,7 +528,6 @@
         line-height: 20px;
         font-weight: 700;
         margin-bottom: 8px;
-    
       }
     }
 
@@ -516,7 +539,6 @@
       border: 2px solid #f85757;
 
       &:hover {
-
         color: #f85757;
         background: #fef0f0;
         border: 2px solid #f85757;
@@ -532,7 +554,6 @@
         font-weight: 500;
         text-decoration: underline;
         border: none;
-
       }
     }
   }
@@ -553,16 +574,15 @@
     @media (max-width: 767px) {
       height: 150px;
       width: 150px;
-      background:none
+      background: none;
     }
-    span{
+    span {
       @media (max-width: 767px) {
         height: 200px !important;
         width: 200px !important;
-        background:none
+        background: none;
       }
     }
-
   }
 
   .box {
@@ -575,7 +595,6 @@
       border-radius: 15px;
       background-color: #fff;
       width: 100%;
-
     }
 
     p {
@@ -599,11 +618,9 @@
       color: #000000;
 
       @media (max-width: 767px) {
-        
         font-size: 16px;
         line-height: 20px;
         font-weight: 700;
-
       }
     }
 
@@ -618,7 +635,6 @@
         border: 2px solid #2a5cb9;
         color: #2b5bb5;
         background: #edf1f8;
-
       }
 
       @media (max-width: 767px) {
@@ -652,22 +668,21 @@
       height: 150px;
       width: 150px;
     }
-    img{
+    img {
       position: absolute;
       top: -170px !important;
       left: -180px !important;
       @media (max-width: 767px) {
         top: 0px !important;
-          left: 0px !important;
+        left: 0px !important;
       }
-      
+    }
+    span {
+      @media (max-width: 767px) {
+        height: 150px !important;
+        width: 150px !important;
       }
-      span{
-        @media (max-width: 767px) {
-          height: 150px !important;
-          width: 150px !important;
-        }
-      }
+    }
   }
 
   .box {
@@ -680,7 +695,6 @@
       border-radius: 15px;
       background-color: #fff;
       width: 100%;
-
     }
 
     p {
@@ -733,7 +747,6 @@
         text-decoration: underline;
         font-weight: 700;
         border: none;
-
       }
     }
   }
@@ -904,21 +917,19 @@
     color: #f85757;
     margin-left: 15px;
     margin-right: 7px;
-
   }
   .map1 {
     font-size: 20px;
     color: #f85757;
     margin-left: 19px;
     margin-right: 7px;
-
   }
   .myspan {
     font-size: 20px;
     font-weight: 600;
     margin-top: 29px;
   }
-  .actbtn{
+  .actbtn {
     background-color: #fff;
     color: #f85757;
     font-size: 12px;
@@ -928,13 +939,12 @@
     margin-top: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
-    &:hover{
+    &:hover {
       color: #f85757;
       background: #fef0f0;
       border: none;
     }
   }
-  
 }
 
 .mycards {
@@ -995,17 +1005,16 @@
     overflow-x: scroll;
   }
 
-  ul{
-    width:max-content;
+  ul {
+    width: max-content;
     margin: 0 auto;
     margin-bottom: 1.5rem;
-
   }
-  li{
+  li {
     display: inline;
   }
   a {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1022,17 +1031,37 @@
       border-radius: 50px;
       scroll-behavior: smooth;
       transition: ease;
-
-
     }
   }
 }
-.libtn{
-  border: 'none' !important;
-background: '#fff' !important;
-color: '#0e0e0e';
-text-decoration: 'underline';
-font-size: '14px';
-font-weight: 'bold';
-padding: '2px'
+.libtn {
+  border: "none" !important;
+  background: "#fff" !important;
+  color: "#0e0e0e";
+  text-decoration: "underline";
+  font-size: "14px";
+  font-weight: "bold";
+  padding: "2px";
+}
+
+.datalist {
+  position: absolute;
+  max-height: 20em;
+  border: 0 none;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.datalist option {
+  font-size: 0.8em;
+  padding: 0.3em 1em;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.datalist option:hover,
+.datalist option:focus {
+  color: #fff;
+  background-color: #036;
+  outline: 0 none;
 }

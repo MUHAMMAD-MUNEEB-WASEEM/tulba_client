@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import "../fonts/font.scss";
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 
-.vendors {
+.filterContainer {
+  padding: 1% 2%;
   h1 {
     font-family: $GiloryBold;
     font-size: 20px;
@@ -10,49 +11,138 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #404040;
-  }
 
-  .icon {
-    background: #fef0f0;
-    height: 50px;
-    width: 50px;
-    color: #f85757;
-    border-radius: 100px;
-    font-size: 10px;
-    margin: 8px;
-    padding: 10px;
-  }
-
-  .actvelink {
-    background: #f85757;
-
-    span {
-      color: #fff;
-      font-family: $GiloryRegular;
-      font-size: 14px;
-      line-height: 20px;
-      text-transform: capitalize;
-      margin: 16px;
-      padding: 10px;
+    &:hover {
+      scale: 105%;
     }
   }
 
-  span {
-    font-family: $GiloryRegular;
-    font-size: 14px;
-    line-height: 20px;
-    text-transform: capitalize;
-    margin: 16px;
-    padding: 10px;
-    color: #000000;
-    text-align: left;
-  }
+  div {
+    padding: 5% 0;
 
-  .bg-light {
-    background: #fafafa;
-    border-radius: 25px;
+    .sideBarList {
+      color: #000000;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      font-family: $GiloryRegular;
+      font-size: 16px;
+      text-transform: capitalize;
+      line-height: 20px;
+      font-weight: 800;
+      cursor: pointer;
+      border-bottom: 1px #dddddd solid;
+      background: linear-gradient(#fff, #fff 50%, #f85757 50%, #f85757);
+      background-size: 100% 200%;
+      transition: background 1s;
+      &:hover {
+        color: #f85757;
+      }
+    }
+    .actvelink {
+      cursor: pointer;
+      background: #f85757;
+      color: #fff;
+      border: none;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    .expandable {
+      overflow: hidden;
+      // line-height: 20px;
+      transition: all 0.5s ease-in-out;
+      padding-left: 25px;
+      transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+      overflow: hidden;
+      box-sizing: border-box;
+      div {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        input {
+          cursor: pointer;
+        }
+        input[type="checkbox"]:before {
+          background: #fff;
+
+          border-radius: 3px;
+          &:hover {
+            scale: 110%;
+            cursor: pointer;
+          }
+        }
+        span {
+          color: #000;
+          font-family: $GiloryRegular;
+          font-weight: 600;
+          text-transform: capitalize;
+          margin: 2px;
+          padding: 2px;
+
+          &:hover {
+            scale: 110%;
+            cursor: pointer;
+          }
+        }
+      }
+    }
   }
 }
+
+// .vendors {
+//   h1 {
+//     font-family: $GiloryBold;
+//     font-size: 20px;
+//     line-height: 23px;
+//     letter-spacing: 0.1em;
+//     text-transform: uppercase;
+//     color: #404040;
+//   }
+
+//   .icon {
+//     background: #fef0f0;
+//     height: 50px;
+//     width: 50px;
+//     color: #f85757;
+//     border-radius: 100px;
+//     font-size: 10px;
+//     margin: 8px;
+//     padding: 10px;
+//   }
+
+//   .actvelink {
+//     background: #f85757;
+
+//     span {
+//       color: #fff;
+//       font-family: $GiloryRegular;
+//       font-size: 14px;
+//       line-height: 20px;
+//       text-transform: capitalize;
+//       margin: 16px;
+//       padding: 10px;
+//     }
+//   }
+
+//   span {
+//     font-family: $GiloryRegular;
+//     font-size: 14px;
+//     line-height: 20px;
+//     text-transform: capitalize;
+//     margin: 16px;
+//     padding: 10px;
+//     color: #000000;
+//     text-align: left;
+//   }
+
+//   .bg-light {
+//     background: #fafafa;
+//     border-radius: 25px;
+//   }
+// }
 
 .input {
   background: #ffffff;
@@ -65,17 +155,15 @@
   background: #f5f6f7 !important;
   border: none !important;
   box-shadow: none !important;
-   label{
+  label {
     font-family: $GiloryBold !important;
-  font-size: 20px !important;
-  line-height: 23px !important;
-  letter-spacing: 0.1em !important;
-  text-transform: uppercase;
-  color: #404040;
-  
-   }
-} 
-
+    font-size: 20px !important;
+    line-height: 23px !important;
+    letter-spacing: 0.1em !important;
+    text-transform: uppercase;
+    color: #404040;
+  }
+}
 
 .inputbtn {
   background: #f85757;
