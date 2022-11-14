@@ -64,12 +64,24 @@ padding: 0 6%;
           cursor: pointer;
           // height: 150px !important;
           @media (max-width: 768px) {
-            // display: none;
+            display: none;
             padding: 14px 0px !important;
           }
         }
       }
+
+      @media (max-width: 768px) {
+       display: flex !important;
+       justify-content: space-around !important;
+      }
+
+      .mobile{
+        @media (max-width: 768px) {
+          display: none !important;
+        }
+      }
       .ui_list {
+       
         li {
           padding:0px 8px;
           //   font-family: "Poppins";

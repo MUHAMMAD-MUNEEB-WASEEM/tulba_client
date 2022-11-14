@@ -22,7 +22,7 @@ const HomeTopSection = () => {
 
       <Container>
         <Row>
-          <Col lg={8} md={12} sm={12} xs={12} className={`my-5 ${styles.order2}`}>
+          <Col lg={8} md={12} sm={12} xs={12} className={` ${styles.order2}`}>
 
             <div className={`my-2  ${styles.top_head} `}>
               <div className='d-flex  justify-content-start'>
@@ -78,7 +78,8 @@ const HomeTopSection = () => {
                     label="Email address">
 
                     <Form.Control
-                      type="email"
+                      type="text"
+                      
 
                       placeholder="Search Vendors, Catering"
                       className={styles.input}
@@ -87,29 +88,30 @@ const HomeTopSection = () => {
                     />
                   </FloatingLabel>
                 </Col>
-                <Col md={4} className="btstrp p-0  flex ">
-                  {/* <FloatingLabel
-                    controlId="floatingSelectGrid"
-                    label="Select Location"
-                  > */}
-                  <input list="locations" name="location" id="location" placeholder="Select Location" className={`bg-white h-full text-black  w-full ${styles.input} `} />
-                  <datalist id="locations" className={`hidden text-black bg-white`} >
+                <Col md={4} className="btstrp p-0">
+                  <FloatingLabel
+                    controlId="floatingInputGrid"
+                    label="Search Location">
+
+                    <Form.Control
+                      type="text"
+                      list='locations'
+                      
+
+                      placeholder="Search Vendors, Catering"
+                      className={styles.input}
+                    // <AiOutlineSearch />
+
+                    />
+
+                    <datalist id="locations" className={`hidden text-black bg-white`} >
                     {cities.map((item, index) =>
                       (<option className='bg-white' key={index} value={item}>{item}</option>)
                     )}
                   </datalist>
-                  {/* <Form.Select
-                      aria-label="Floating label select example"
-                      className={styles.input}
-                    >
-
-                      <option>In (E.g. Karachi)</option>
-                      <option value="Islamabad">Islamabad</option>
-                      <option value="Karachi">Karachi</option>
-                      <option value="Lahore">Lahore</option>
-                    </Form.Select> */}
-                  {/* </FloatingLabel> */}
+                  </FloatingLabel>
                 </Col>
+           
                 <Col md={2} sm={12} className="p-0">
                   <Button className={`px-2 ${styles.inputbtn}`}>Search here</Button>
                 </Col>

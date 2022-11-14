@@ -7,36 +7,45 @@ import Temp3 from "public/assests/weddingtemp/temp3.svg";
 import Temp4 from "public/assests/weddingtemp/temp4.svg";
 import Image from "next/image";
 import { AiFillHeart } from "react-icons/ai";
+import { useState } from 'react';
+import Link from 'next/link';
 
 const Template = () => {
+
+    const [loggedIn, setLoggedIn] = useState(true);
+
     return (
         <div>
-            <Container>
+            <Container >
                 <Row>
-                    <Col lg={3} md={6} className={styles.template}>
-                        <Image
-                            src={Temp}
-                            layout="responsive"
-                            alt="template"
-                        />
-                        <div className="d-flex justify-content-between">                                    <p>
-                            The Asthetical
-                        </p>
-                            <AiFillHeart
-                                className={styles.heartIcon} />
-                        </div>
-                        <span>
-                            Starting from $29
-                        </span>
+                    <Link href="/template/design">
+                        <Col  lg={3} md={6} className={styles.template}>
+                    
+                                <Image
+                                    src={Temp}
+                                    layout="responsive"
+                                    alt="template"
+                                />
+                                <div className="d-flex justify-content-between">                                    <p>
+                                    The Asthetical
+                                </p>
+                                    <AiFillHeart
+                                        className={styles.heartIcon} />
+                                </div>
+                                <span>
+                                    Starting from $29
+                                </span>
 
-                        <div className="d-flex justify-content-start  my-1">
-                            <div className={`mx-1 ${styles.circle_blue}`}></div>
-                            <div className={`mx-1 ${styles.circle_green}`}></div>
-                            <div className={`mx-1 ${styles.circle_pink}`}></div>
+                                <div className="d-flex justify-content-start  my-1">
+                                    <div className={`mx-1 ${styles.circle_blue}`}></div>
+                                    <div className={`mx-1 ${styles.circle_green}`}></div>
+                                    <div className={`mx-1 ${styles.circle_pink}`}></div>
 
-                        </div>
+                            </div>
+                            
 
-                    </Col>
+                        </Col>
+                    </Link>
                     <Col lg={3}md={6} className={styles.template}>
                         <Image
                             src={Temp2}
