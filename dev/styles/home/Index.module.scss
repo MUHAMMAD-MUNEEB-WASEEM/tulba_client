@@ -455,6 +455,7 @@
     }
   }
 
+  
   .plan_img {
     @media (max-width: 767px) {
       height: 100px;
@@ -465,6 +466,22 @@
       height: 500px;
       width: 500px;
     }
+  }
+}
+
+
+.plan_img1 {
+  min-width: 80%;
+  min-height: 60%;
+  
+  @media (max-width: 767px) {
+    height: 100px;
+    width: 100px;
+  }
+
+  @media (min-width: 1024px) {
+    height: 500px;
+    width: 500px;
   }
 }
 
@@ -479,6 +496,8 @@
     border-radius: 100%;
     background: #fa5856;
     margin: 0 auto;
+    min-width: 80% !important;
+    min-height: 60% !important;
 
     @media (max-width: 767px) {
       height: 150px;
@@ -486,17 +505,18 @@
     }
     img {
       position: absolute;
-      top: -40px !important;
-      left: -110px !important;
+      top: 100px !important;
+      left: 20px !important;
       @media (max-width: 767px) {
-        top: 0px !important;
-        left: 0px !important;
+        top: 90px !important;
+      height: 30px !important;
+        left: 20px !important;
       }
     }
     span {
       @media (max-width: 767px) {
-        height: 150px !important;
-        width: 150px !important;
+        height: 110px !important;
+        width: 130px !important;
       }
     }
   }
@@ -1074,4 +1094,37 @@
   color: #fff;
   background-color: #036;
   outline: 0 none;
+}
+
+.back1 {
+  // background-image: url("../../public/assests/home_img/Ellipse\ 1381.svg");
+  // background-size: cover;
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  background: #fa5856;
+  margin: 0 auto;
+  min-width: 80% !important;
+  min-height: 60% !important;
+
+  @media (max-width: 767px) {
+    height: 150px;
+    width: 150px;
+  }
+  img {
+    position: absolute;
+    top: 50px !important;
+      left: -100px !important;
+    @media (max-width: 767px) {
+      top: 40px !important;
+    height: 30px !important;
+      left: 10px !important;
+    }
+  }
+  span {
+    @media (max-width: 767px) {
+      height: 110px !important;
+      width: 130px !important;
+    }
+  }
 }

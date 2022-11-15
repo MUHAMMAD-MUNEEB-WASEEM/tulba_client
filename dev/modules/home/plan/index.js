@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {MyCard,MyCardBlue,MyCardYellow} from "./MyCard";
+import {MyCard,MyCardBlue,MyCardYellow, MyCardOne} from "./MyCard";
 import styles from "/styles/home/Index.module.scss";
 import imageone from "public/assests/home_img/Download.svg"
 import arabian2 from "public/assests/home_img/arabian.jpg"
@@ -66,7 +66,7 @@ const Plan = () => {
             />
           </Col>
           <Col lg={4} md={6}  sm={6} xs={6}>
-            <MyCard
+            <MyCardOne
               imgsrc="/../assests/home_img/Download.svg"
               head="Guest List/RSVP"
               para="Browse through venues, catering, decor & more 

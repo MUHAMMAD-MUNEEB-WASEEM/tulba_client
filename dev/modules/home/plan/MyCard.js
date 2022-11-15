@@ -10,11 +10,11 @@ const MyCard = (props) => {
         <div className={` ${styles.back}`}>
           <Image
             src={props.imgsrc}
-            width={"400px"}
-            height={"350px"}
+            width={"280px"}
+            height={"250px"}
             layout="fixed"
             alt="template"
-            className={`img-fluid ${styles.plan_img}`}
+            className={`img-fluid ${styles.plan_img1}`}
 
           />
         </div>
@@ -30,6 +30,35 @@ const MyCard = (props) => {
     </>
   )
 }
+
+const MyCardOne = (props) => {
+  return (
+    <>
+      <div className={styles.redbox}>
+        <div className={` ${styles.back1}`}>
+          <Image
+            src={props.imgsrc}
+            width={"400px"}
+            height={"250px"}
+            layout="fixed"
+            alt="template"
+            className={`img-fluid ${styles.plan_img1}`}
+
+          />
+        </div>
+        {/* <img src={props.imgsrc} alt="template" /> */}
+        <div className={styles.box}>
+          <h6>{props.head}</h6>
+          <p>{props.para}</p>
+          <button className='px-2 py-2 d-flex'>{props.btn}
+          <AiOutlineArrowRight className="my-1 mx-2"/>
+          </button>
+        </div>
+      </div>
+    </>
+  )
+}
+
 
 const MyCardYellow = (props) => {
   return (
@@ -89,4 +118,4 @@ const MyCardBlue = (props) => {
   )
 }
 
-export { MyCard, MyCardBlue, MyCardYellow }
+export { MyCard, MyCardBlue, MyCardYellow, MyCardOne }
