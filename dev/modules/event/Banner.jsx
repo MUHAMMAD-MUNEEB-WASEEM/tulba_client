@@ -9,6 +9,10 @@ import Form from 'react-bootstrap/Form';
 import googlelogo from "public/assests/GoogleLogo.svg";
 import fb from "public/assests/fb.svg";
 import apple from "public/assests/apple.svg";
+import Link from "next/link";
+
+const cities = ['Abbottabad', 'Astore', 'Attock', 'Awaran', 'Badin', 'Bagh', 'Bahawalnagar', 'Bahawalpur', 'Bajaur', 'Bannu', 'Barkhan', 'Batagram', 'Bhakkar', 'Bhimber', 'Buner', 'Chagai', 'Chakwal', 'Charsadda', 'Chiniot', 'Dadu', 'Darel', 'Dera-Bugti', 'Dera-Ghazi-Khan', 'Dera-Ismail-Khan', 'Diamer', 'Duki', 'Faisalabad', '', 'Ghizer', 'Ghotki', 'Gilgit', 'Gujranwala', 'Gujrat', 'Gupis', 'Yasin', 'Gwadar', 'Hafizabad', 'Hangu', 'Haripur', 'Harnai', 'Hattian', 'Haveli', 'Hunza', 'Hyderabad', 'Islamabad', 'Jacobabad', 'Jafarabad', 'Jamshoro', 'JhalMagsi', 'Jhang', 'Jhelum', 'Kachhi', 'Kalat', 'Karachi-Central', 'Karachi-East', 'Karachi-South', 'Karachi-West', 'Karak', 'Kashmore', 'Kasur', 'Kech', 'Khairpur', 'Khanewal', 'Kharan', 'Kharmang', 'Khushab', 'Khuzdar', 'Khyber', 'Killa-Abdullah', 'Kohat', 'Kohlu', 'Kolai-Pallas', 'Korangi', 'Kotli', 'Kurram', 'Lahore', 'Lakki-Marwat', 'Larkana', 'Lasbela', 'Layyah', 'Lodhran', 'Loralai', 'Lower-Chitral', 'Lower-Dir', 'Lower-Kohistan', 'Malakand', 'Malir', 'Mandi-Bahauddin', 'Mansehra', 'Mardan', 'Mastung', 'Matiari', 'Mianwali', 'Mirpur-Khas', 'Mirpur', 'Mohmand', 'Multan', 'Musakhel', 'Muzaffarabad', 'Muzaffargarh', 'Nagar', 'Nankana-Sahib', 'Narowal', 'Naseerabad', 'Naushahro-Firoze', 'Neelum', 'North-Waziristan', 'Nowshera', 'Nushki', 'Okara', 'Orakzai', 'Pakpattan', 'Panjgur', 'Peshawar', 'Pishin', 'Poonch', 'Qambar-Shahdadkot', 'Qilla-Saifullah', 'Quetta', 'Rahim-Yar-Khan', 'Rajanpur', 'Rawalpindi', 'Roundu', 'Sahiwal', 'Sanghar', 'Sargodha', 'Shaheed-Benazirabad', 'Shaheed', 'Sikandarabad', 'Shangla', 'Sheikhupura', 'Sherani', 'Shigar', 'Shikarpur', 'Sialkot', 'Sibi', 'Skardu', 'Sohbatpur', 'South', 'Waziristan', 'Sudhnutti', 'Sujawal', 'Sukkur', 'Swabi', 'Swat', 'Tando', 'Allahyar', 'Tando', 'Muhammad', 'Khan', 'Tangir', 'Tank', 'Tharparkar', 'Thatta', 'Toba', 'Tek', 'Singh', 'Tor', 'Ghar', 'Umerkot', 'Upper', 'Chitral', 'Upper', 'Dir', 'Upper', 'Kohistan', 'Vehari', 'Washuk', 'Zhob', 'Ziarat'];
+
 
 const Banner = () => {
   return (
@@ -44,7 +48,7 @@ const Banner = () => {
                   </FloatingLabel>
                 </Col>
                 <Col md={5} className="btstrp p-0">
-                  <FloatingLabel
+                  {/* <FloatingLabel
                     controlId="floatingSelectGrid"
                     label="Select Location"
                   >
@@ -58,47 +62,73 @@ const Banner = () => {
                       <option value="Karachi">Karachi</option>
                       <option value="Lahore">Lahore</option>
                     </Form.Select>
+                  </FloatingLabel> */}
+                  <FloatingLabel
+                    controlId="floatingInputGrid"
+                    label="Search Location">
+
+                    <Form.Control
+                      type="text"
+                      list='locations'
+
+
+                      placeholder="Search Vendors, Catering"
+                      className={styles.input}
+                    // <AiOutlineSearch />
+
+                    />
+
+                    <datalist id="locations" className={`hidden text-black bg-white`} >
+                      {cities.map((item, index) =>
+                        (<option className='bg-white' key={index} value={item}>{item}</option>)
+                      )}
+                    </datalist>
                   </FloatingLabel>
                 </Col>
+
                 <Col md={2} sm={12} className="p-0">
                   <Button className={` ${styles.inputbtn}`}>Start Planning</Button>
                 </Col>
               </Row>
-            <div className="d-flex justify-content-between">
-              <h5>
-              You can also sign up using:
-              </h5>
-              <h5>Already have an account? Log in</h5>
-            </div>
-              <div className="d-flex">
-                <div className={styles.logo}>
-                  <Image
-                    src={googlelogo}
-                    alt="googlelogo"
-                    width={"20px"}
-                    height={"20px"}
-                    loading="lazy"
-                  />{" "}
+
+              <div className={styles.loginOptions}>
+                <div className={styles.social}>
+                  <h5>You can also sign up using:</h5>
+                  <div className="d-flex">
+                    <div className={styles.logo}>
+                      <Image
+                        src={googlelogo}
+                        alt="googlelogo"
+                        width={"20px"}
+                        height={"20px"}
+                        loading="lazy"
+                      />{" "}
+                    </div>
+                    <div className={styles.logo}>
+                      <Image
+                        src={fb}
+                        alt="googlelogo"
+                        width={"20px"}
+                        height={"20px"}
+                        loading="lazy"
+                      />{" "}
+                    </div>
+                    <div className={styles.logo}>
+                      <Image
+                        src={apple}
+                        alt="googlelogo"
+                        width={"20px"}
+                        height={"20px"}
+                        loading="lazy"
+                      />{" "}
+                    </div>
+                  </div>
                 </div>
-                <div  className={styles.logo}>
-                  <Image
-                    src={fb}
-                    alt="googlelogo"
-                    width={"20px"}
-                    height={"20px"}
-                    loading="lazy"
-                  />{" "}
-                </div>
-                <div  className={styles.logo}>
-                  <Image
-                    src={apple}
-                    alt="googlelogo"
-                    width={"20px"}
-                    height={"20px"}
-                    loading="lazy"
-                  />{" "}
+                <div className={styles.login}>
+                  <h5>Already have an account? <Link href="/loginin" >Log in</Link></h5>
                 </div>
               </div>
+
 
             </div>
           </Col>

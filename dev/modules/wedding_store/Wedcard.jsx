@@ -21,9 +21,108 @@ const Wedcard = () => {
     const [paper, showPaper] = useState(false)
     const [price, showPrice] = useState(false)
     const [type, showType] = useState(false)
+    const [mobileCard, showMobileCard] = useState(false)
 
     return (
         <div className='border'>
+            {mobileCard &&
+                <div className='w-screen'>
+                    <div className={styles.mobileCard}>
+                        <div className='d-flex justify-content-end'><div onClick={()=>{showMobileCard(!mobileCard)}} className={styles.closeButton}>x</div> </div>
+                        <div onClick={() => showPaper(!paper)} className={`${styles.sideBarList} ${paper && styles.actvelink} `}>
+                            {!paper ?
+                                <AiOutlineRight size={20} />
+                                :
+                                <AiOutlineDown size={20} />
+                            }
+                            <span>  Paper </span>
+                        </div>
+
+                        {paper &&
+                            <div className={styles.expandable} >
+                                <div>
+                                    <input type='checkbox' />
+                                    <span>Matte</span>
+                                </div>
+                                <div>
+                                    <input type='checkbox' />
+                                    <span>Glossy</span>
+                                </div>
+                                <div>
+                                    <input type='checkbox' />
+                                    <span>Handmade</span>
+                                </div>
+                                <div>
+                                    <input type='checkbox' />
+                                    <span>Mylar</span>
+                                </div>
+                                <div>
+                                    <input type='checkbox' />
+                                    <span>Recycled</span>
+                                </div>
+                                <div>
+                                    <input type='checkbox' />
+                                    <span>Parchment</span>
+                                </div>
+
+                            </div>
+                        }
+                        <div onClick={() => showPrice(!price)} className={`${styles.sideBarList} ${price && styles.actvelink} `}>
+                            {!price ?
+                                <AiOutlineRight size={20} />
+                                :
+                                <AiOutlineDown size={20} />
+                            }
+                            <span>  Price </span>
+                        </div>
+                        {price &&
+                            <div className={styles.expandable} >
+                                <div>
+                                    <input type='checkbox' />
+                                    <span>$1-$10</span>
+                                </div>
+                                <div>
+                                    <input type='checkbox' />
+                                    <span>$11-$20</span>
+                                </div>
+                                <div>
+                                    <input type='checkbox' />
+                                    <span>$20-$30</span>
+                                </div>
+                                <div>
+                                    <input type='checkbox' />
+                                    <span>$30-$50</span>
+                                </div>
+                            </div>
+                        }
+                        <div onClick={() => showType(!type)} className={`${styles.sideBarList} ${type && styles.actvelink} `}>
+                            {!type ?
+                                <AiOutlineRight size={20} />
+                                :
+                                <AiOutlineDown size={20} />
+                            }
+                            <span>Type </span>
+                        </div>
+                        {type &&
+                            <div className={styles.expandable} >
+                                <div>
+                                    <input className={styles.input} type='checkbox' />
+                                    <span>Cards</span>
+                                </div>
+                                <div>
+                                    <input type='checkbox' />
+                                    <span>Boxed Gifting</span>
+                                </div>
+                                <div>
+                                    <input type='checkbox' />
+                                    <span>Novel Concepts</span>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+
             <Container fluid>
                 <Row>
                     <Col md={3} className={styles.filterContainer}>
@@ -122,10 +221,16 @@ const Wedcard = () => {
                         </div>
                     </Col>
 
+
+                    <Col md={3} className={styles.filterButton}>
+                        <span></span>
+                        <button onClick={()=>{showMobileCard(!mobileCard)}} > Filters </button>
+                    </Col>
+
                     <Col lg={9}>
                         <div className='d-flex align-items-center'>
                             <h1>Shop Our hand crafted Invitations</h1>
-                            <h6 className="mt-2 mx-2">(1,000+ relevant results )</h6>
+                            <h6 className="mt-2 mx-1">(1,000+ relevant results )</h6>
                         </div>
                         <Row>
                             <Col lg={4} md={6} className="my-2">
@@ -559,6 +664,7 @@ const Wedcard = () => {
                     </Col>
                 </Row>
             </Container>
+
         </div>
     )
 }

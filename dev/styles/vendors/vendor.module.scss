@@ -90,59 +90,149 @@
       }
     }
   }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
-// .vendors {
-//   h1 {
-//     font-family: $GiloryBold;
-//     font-size: 20px;
-//     line-height: 23px;
-//     letter-spacing: 0.1em;
-//     text-transform: uppercase;
-//     color: #404040;
-//   }
+.filterButton {
+  display: none;
 
-//   .icon {
-//     background: #fef0f0;
-//     height: 50px;
-//     width: 50px;
-//     color: #f85757;
-//     border-radius: 100px;
-//     font-size: 10px;
-//     margin: 8px;
-//     padding: 10px;
-//   }
+  button {
+    border: 3px solid #f85757;
+    border-radius: 20px;
+    background: #f85757;
+    color: #fff;
 
-//   .actvelink {
-//     background: #f85757;
+    padding: 5px 10px;
+    font-weight: 600;
+    font-family: $GiloryBold;
+    &:hover {
+      background: #fff;
+      color: #f85757;
+    }
+  }
 
-//     span {
-//       color: #fff;
-//       font-family: $GiloryRegular;
-//       font-size: 14px;
-//       line-height: 20px;
-//       text-transform: capitalize;
-//       margin: 16px;
-//       padding: 10px;
-//     }
-//   }
+  @media (max-width: 767px) {
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    justify-content: space-between;
+  }
+}
 
-//   span {
-//     font-family: $GiloryRegular;
-//     font-size: 14px;
-//     line-height: 20px;
-//     text-transform: capitalize;
-//     margin: 16px;
-//     padding: 10px;
-//     color: #000000;
-//     text-align: left;
-//   }
+.mobileCard {
+  display: none;
 
-//   .bg-light {
-//     background: #fafafa;
-//     border-radius: 25px;
-//   }
-// }
+
+
+  .closeButton {
+    background-color: #f85757;
+    color: #fff;
+    padding: 4px;
+    margin-right: 7px;
+    border-radius: 5px;
+    border: 1px solid #f85757;
+    height: 24px;
+
+    width: 24px;
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      background-color: #fff;
+      color: #f85757;
+    }
+  }
+
+  @media (max-width: 767px) {
+    display: block;
+    position: absolute;
+    background: #fff;
+    height: 80vh;
+    width: 100%;
+    z-index: 9999;
+    border-radius: 20px;
+    // bottom: 0;
+  }
+
+    div {
+    padding: 2% 6%;
+
+    .sideBarList {
+      color: #000000;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      font-family: $GiloryRegular;
+      font-size: 16px;
+      text-transform: capitalize;
+      line-height: 20px;
+      font-weight: 800;
+      cursor: pointer;
+      border-bottom: 1px #dddddd solid;
+      background: linear-gradient(#fff, #fff 50%, #f85757 50%, #f85757);
+      background-size: 100% 200%;
+      transition: background 1s;
+      &:hover {
+        color: #f85757;
+      }
+    }
+    .actvelink {
+      cursor: pointer;
+      background: #f85757;
+      color: #fff;
+      border: none;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    .expandable {
+      overflow: hidden;
+      // line-height: 20px;
+      transition: all 0.5s ease-in-out;
+      padding-left: 25px;
+      transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+      overflow: hidden;
+      box-sizing: border-box;
+      div {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        input {
+          cursor: pointer;
+        }
+        input[type="checkbox"]:before {
+          background: #fff;
+
+          border-radius: 3px;
+          &:hover {
+            scale: 110%;
+            cursor: pointer;
+          }
+        }
+        span {
+          color: #000;
+          font-family: $GiloryRegular;
+          font-weight: 600;
+          text-transform: capitalize;
+          margin: 2px;
+          padding: 2px;
+
+          &:hover {
+            scale: 110%;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
 
 .input {
   background: #ffffff;

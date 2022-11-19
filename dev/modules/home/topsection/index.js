@@ -41,11 +41,14 @@ const HomeTopSection = () => {
                           src={Group}
                         />
                       </span>
-                      <span className={`${styles.dream}`}>Dream</span>
-                      <Image
-                        src={stroke}
-                        width={"100px"}
-                      />
+                      <div className={styles.dreamContainer}>
+
+                        <span className={`${styles.dream}`}>Dream</span>
+                        <Image
+                          src={stroke}
+                          width={"100px"}
+                        />
+                      </div>
                     </span>
                   </div>
                 </Col>
@@ -53,13 +56,16 @@ const HomeTopSection = () => {
 
               <Row>
                 <Col lg={12}>
-                  <div className="d-flex flex-wrap justify-content-start">
+                  <div className="d-flex flex-wrap justify-content-start ">
                     <span className='d-flex flex-column align-items-start mx-2'>
-                      <span className={` ${styles.event}`}> Event </span>
-                      <Image
-                        src={stroke1}
-                        width={"100px"}
-                      />
+                      <div className={styles.eventContainer}>
+
+                        <span className={` ${styles.event}`}> Event </span>
+                        <Image
+                          src={stroke1}
+                          width={"100px"}
+                        />
+                      </div>
                     </span>
                     <span className={styles.headspan2}>
                       Comes True
@@ -79,7 +85,7 @@ const HomeTopSection = () => {
 
                     <Form.Control
                       type="text"
-                      
+
 
                       placeholder="Search Vendors, Catering"
                       className={styles.input}
@@ -96,7 +102,7 @@ const HomeTopSection = () => {
                     <Form.Control
                       type="text"
                       list='locations'
-                      
+
 
                       placeholder="Search Vendors, Catering"
                       className={styles.input}
@@ -105,13 +111,13 @@ const HomeTopSection = () => {
                     />
 
                     <datalist id="locations" className={`hidden text-black bg-white`} >
-                    {cities.map((item, index) =>
-                      (<option className='bg-white' key={index} value={item}>{item}</option>)
-                    )}
-                  </datalist>
+                      {cities.map((item, index) =>
+                        (<option className='bg-white' key={index} value={item}>{item}</option>)
+                      )}
+                    </datalist>
                   </FloatingLabel>
                 </Col>
-           
+
                 <Col md={2} sm={12} className="p-0">
                   <Button className={`px-2 ${styles.inputbtn}`}>Search here</Button>
                 </Col>

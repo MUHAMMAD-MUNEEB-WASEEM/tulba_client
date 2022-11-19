@@ -103,6 +103,22 @@ $deviceMaxWidth: 1024px;
 .banner {
   margin: 0 auto;
   width: 40%;
+
+
+  .loginOptions{
+    display: flex;
+    border: 2px solid red;
+    justify-content: space-between;
+    align-items: center;
+   
+     @media (max-width: 767px) {
+      flex-direction: column;
+      
+     }
+  }
+
+
+
   @media (max-width: 767px) {
     width: 90%;
   }

@@ -48,9 +48,9 @@
       }
       @media (max-width: 400px) {
         // padding: 8px 0px;
-        div{
-        flex-wrap: wrap;
-      }
+        div {
+          flex-wrap: wrap;
+        }
       }
     }
 
@@ -114,6 +114,9 @@
           padding: 8px 0px;
         }
       }
+
+      .hide{}
+     
       .btn_signup {
         padding: 8px 14px;
         button {
