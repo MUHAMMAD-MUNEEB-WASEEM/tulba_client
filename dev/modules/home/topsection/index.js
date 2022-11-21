@@ -75,7 +75,7 @@ const HomeTopSection = () => {
                 <Col md={4} className="btstrp p-0">
                   <FloatingLabel
                     controlId="floatingInputGrid"
-                    label="Email address">
+                    label="Search Vendors, Catering">
 
                     <Form.Control
                       type="text"

@@ -57,3 +57,29 @@ $deviceMaxWidth: 1024px;
       width: 90%;
     }
   }
+
+    .btn1 {
+      background: #FA5856;
+      border: 0.7px solid ;
+      border-radius: 2px;
+      font-size: 14px;
+      font-weight: 500;
+      width: 95%;
+      height: 40px;
+      margin:16px;
+      text-align: center;
+      &:hover {
+        color: #FA5856;
+        background: #fff;
+        border: none;
+        border: 0.7px solid #FA5856;
+  
+      }
+      @media (max-width: 767px) {
+        width: 90%;
+      }
+      @media only screen and (min-device-width: $deviceMinWidth) and (max-device-width: $deviceMaxWidth)
+      {
+        width: 90%;
+      }
+  }

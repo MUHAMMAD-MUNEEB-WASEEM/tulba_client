@@ -5,6 +5,7 @@ import Image from "next/image";
 // import Img from "public/assests/vendors/banner.svg";
 import styles from "/styles/Rsvp/Rsvp.module.scss";
 import style from "/styles/vendors/vendor.module.scss";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -13,7 +14,7 @@ const Banner = () => {
         <Row>
           <Col lg={6} className={`p-0 ${styles.banner}`}>
             <Breadcrumb>
-              <Breadcrumb.Item href="#" className={styles.brdcrumb}>Home</Breadcrumb.Item>
+              <Breadcrumb.Item href="#" className={styles.brdcrumb}><Link href='/'>Home </Link></Breadcrumb.Item>
               <Breadcrumb.Item active className={styles.actbrdcrumb}>Vendors</Breadcrumb.Item>
             </Breadcrumb>
             <div>

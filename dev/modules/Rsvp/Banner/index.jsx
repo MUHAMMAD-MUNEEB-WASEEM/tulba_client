@@ -26,9 +26,7 @@ const Banner = () => {
                 Get Listed all your wedding items and see their progress on the
                 go.
               </p>
-              <Button 
-              className={`my-4 ${styles.btn}`}
-              >Browse More</Button>
+
             </div>
           </Col>
           <Col lg={6}>

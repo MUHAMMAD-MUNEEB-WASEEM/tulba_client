@@ -31,7 +31,7 @@ const Content = (props) => {
                                 <li>{props.li_two}</li>
                                 <span className="d-flex justify-content-start">
                                     <li>{props.li_three}
-                                        <Link href="/castle">
+                                        <Link href="/event">
                                             <button  variant="danger"
                                                 className={styles.libtn}> see more
                                             </button>

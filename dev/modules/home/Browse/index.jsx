@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 // import "styles/global.scss"
 import styles from "/styles/home/Index.module.scss";
+import Link from 'next/link';
 
 const Browse = () => {
 
@@ -144,7 +145,9 @@ const Browse = () => {
               </div>
             </Slider>
             <div className="text-center my-5 ">
+              <Link href="/Vendors">
               <Button className={styles.btn}>See all vendors</Button>
+              </Link>
             </div>
           </Col>
         </Row>

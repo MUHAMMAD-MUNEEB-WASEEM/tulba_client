@@ -10,7 +10,9 @@ const BrowseCard = (props) => {
   return (
     <>
 
-      <div className={`mx-2 ${styles.browse}`}>
+    <Link href="/castle">
+
+      <div className={`mx-2 cursor-pointer ${styles.browse}`}>
         <Image
           src={props.imgsrc}
           width={"303px"}
@@ -53,19 +55,12 @@ const BrowseCard = (props) => {
             <span className='my-3'> Per Event</span>
           </div>
           <div>
-            <Link href="/castle">
-              <div className="d-flex">
-                <Button
-                  className={styles.actbtn}> Browse more
-                  {/* <AiOutlineArrowRight /> */}
-                </Button>
-              </div>
 
-            </Link>
           </div>
         </div>
 
       </div>
+      </Link>
     </>
 
   )

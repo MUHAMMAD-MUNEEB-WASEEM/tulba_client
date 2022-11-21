@@ -10,7 +10,7 @@ const MyCard = (props) => {
         <div className={` ${styles.back}`}>
           <Image
             src={props.imgsrc}
-            width={"280px"}
+            width={"300px"}
             height={"250px"}
             layout="fixed"
             alt="template"

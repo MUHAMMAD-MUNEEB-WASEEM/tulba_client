@@ -29,7 +29,7 @@ const Header = () => {
           >
             <div className={`${style.reg_date} flex items-center gap-3`}>
               <p>7 Shaaban 1443AH &nbsp;</p>
-              <p> |&nbsp; Thurasday , 10 March 2022</p>
+              <p> |&nbsp; Thursday , 10 March 2022</p>
             </div>
             {/* <div className={style.headerTop_vendor}  onClick={() => setModalShow(true)}>Are You A Vendor? */}
             {/* </div> */}
@@ -49,7 +49,7 @@ const Header = () => {
           </div>
           <Navbar>
             <div
-              className={` flex items-center justify-between ${style.header_bottom}`}
+              className={` flex items-center justify-between w-full ${style.header_bottom}`}
             >
               <div>
                 <Link href="/">
@@ -69,13 +69,16 @@ const Header = () => {
                     </span>{" "}
                     <ul className={style.nav__submenu}>
                       <li className={style.nav__submenu_item}>
-                        <Link href={"/store"}>Wedding Store</Link>
+                        <Link href={"/store"}>Catering</Link>
                       </li>
                       <li className={style.nav__submenu_item}>
-                        <Link href={"/Rsvp"}>Rsvp</Link>
+                        <Link href={"/Rsvp"}>Decoration</Link>
                       </li>
                       <li className={style.nav__submenu_item}>
-                        <Link href={"/checkout"}>Checkout</Link>
+                        <Link href={"/checkout"}>Venue</Link>
+                      </li>
+                      <li className={style.nav__submenu_item}>
+                        <Link href={"/checkout"}>Florist</Link>
                       </li>
                     </ul>
                   </li>
@@ -88,11 +91,11 @@ const Header = () => {
                       {/* <li className={style.nav__submenu_item}>
                       <a>Events</a>
                     </li> */}
-                      <li className={style.nav__submenu_item}>
-                        <a>Reception</a>
+                     <li className={style.nav__submenu_item}>
+                        <Link href={""}>Checklist</Link>
                       </li>
                       <li className={style.nav__submenu_item}>
-                        <a>Gathering</a>
+                        <Link href={"/Rsvp"}>Rsvp</Link>
                       </li>
                     </ul>
                   </li>

@@ -4,7 +4,6 @@
 $deviceMinWidth: 768px;
 $deviceMaxWidth: 1024px;
 
-
 .rsvp_page{
   margin: 0 auto;
   width: 90%;
@@ -95,6 +94,9 @@ $deviceMaxWidth: 1024px;
     line-height: 47px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+  }
+  a {
+    color: black;
   }
   
 }

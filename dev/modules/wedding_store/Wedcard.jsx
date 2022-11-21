@@ -165,11 +165,11 @@ const Wedcard = () => {
 
                                 <div className="flex flex-row justify-evenly my-1 mx-1">
                                     <div>
-                                        <Button className={stylesButton.btn} variant="danger">Buy Now</Button>
+                                        <Button className={stylesButton.btn1} variant="danger">Buy Now</Button>
                                     </div>
 
                                     <div >
-                                        <Button className={stylesButton.btn} variant="danger" >Add to Cart</Button>
+                                        <Button className={stylesButton.btn1} variant="danger" >Add to Cart</Button>
                                     </div>
 
                                 </div>
@@ -212,11 +212,11 @@ const Wedcard = () => {
 
                                 <div className="flex flex-row justify-evenly my-1 mx-1">
                                     <div>
-                                        <Button className={stylesButton.btn} variant="danger">Buy Now</Button>
+                                        <Button className={stylesButton.btn1} variant="danger">Buy Now</Button>
                                     </div>
 
                                     <div >
-                                        <Button className={stylesButton.btn} variant="danger" >Add to Cart</Button>
+                                        <Button className={stylesButton.btn1} variant="danger" >Add to Cart</Button>
                                     </div>
 
                                 </div>
@@ -259,11 +259,11 @@ const Wedcard = () => {
 
                                 <div className="flex flex-row justify-evenly my-1 mx-1">
                                     <div>
-                                        <Button className={stylesButton.btn} variant="danger">Buy Now</Button>
+                                        <Button className={stylesButton.btn1} variant="danger">Buy Now</Button>
                                     </div>
 
                                     <div >
-                                        <Button className={stylesButton.btn} variant="danger" >Add to Cart</Button>
+                                        <Button className={stylesButton.btn1} variant="danger" >Add to Cart</Button>
                                     </div>
 
                                 </div>
@@ -306,11 +306,11 @@ const Wedcard = () => {
 
                                 <div className="flex flex-row justify-evenly my-1 mx-1">
                                     <div>
-                                        <Button className={stylesButton.btn} variant="danger">Buy Now</Button>
+                                        <Button className={stylesButton.btn1} variant="danger">Buy Now</Button>
                                     </div>
 
                                     <div >
-                                        <Button className={stylesButton.btn} variant="danger" >Add to Cart</Button>
+                                        <Button className={stylesButton.btn1} variant="danger" >Add to Cart</Button>
                                     </div>
 
                                 </div>
@@ -353,11 +353,11 @@ const Wedcard = () => {
 
                                 <div className="flex flex-row justify-evenly my-1 mx-1">
                                     <div>
-                                        <Button className={stylesButton.btn} variant="danger">Buy Now</Button>
+                                        <Button className={stylesButton.btn1} variant="danger">Buy Now</Button>
                                     </div>
 
                                     <div >
-                                        <Button className={stylesButton.btn} variant="danger" >Add to Cart</Button>
+                                        <Button className={stylesButton.btn1} variant="danger" >Add to Cart</Button>
                                     </div>
 
                                 </div>
@@ -400,11 +400,11 @@ const Wedcard = () => {
 
                                 <div className="flex flex-row justify-evenly my-1 mx-1">
                                     <div>
-                                        <Button className={stylesButton.btn} variant="danger">Buy Now</Button>
+                                        <Button className={stylesButton.btn1} variant="danger">Buy Now</Button>
                                     </div>
 
                                     <div >
-                                        <Button className={stylesButton.btn} variant="danger" >Add to Cart</Button>
+                                        <Button className={stylesButton.btn1} variant="danger" >Add to Cart</Button>
                                     </div>
 
                                 </div>
@@ -447,11 +447,11 @@ const Wedcard = () => {
 
                                 <div className="flex flex-row justify-evenly my-1 mx-1">
                                     <div>
-                                        <Button className={stylesButton.btn} variant="danger">Buy Now</Button>
+                                        <Button className={stylesButton.btn1} variant="danger">Buy Now</Button>
                                     </div>
 
                                     <div >
-                                        <Button className={stylesButton.btn} variant="danger" >Add to Cart</Button>
+                                        <Button className={stylesButton.btn1} variant="danger" >Add to Cart</Button>
                                     </div>
 
                                 </div>
@@ -494,11 +494,11 @@ const Wedcard = () => {
 
                                 <div className="flex flex-row justify-evenly my-1 mx-1">
                                     <div>
-                                        <Button className={stylesButton.btn} variant="danger">Buy Now</Button>
+                                        <Button className={stylesButton.btn1} variant="danger">Buy Now</Button>
                                     </div>
 
                                     <div >
-                                        <Button className={stylesButton.btn} variant="danger" >Add to Cart</Button>
+                                        <Button className={stylesButton.btn1} variant="danger" >Add to Cart</Button>
                                     </div>
 
                                 </div>
@@ -540,11 +540,11 @@ const Wedcard = () => {
 
                                 <div className="flex flex-row justify-evenly my-1 mx-1">
                                     <div>
-                                        <Button className={stylesButton.btn} variant="danger">Buy Now</Button>
+                                        <Button className={stylesButton.btn1} variant="danger">Buy Now</Button>
                                     </div>
 
                                     <div >
-                                        <Button className={stylesButton.btn} variant="danger" >Add to Cart</Button>
+                                        <Button className={stylesButton.btn1} variant="danger" >Add to Cart</Button>
                                     </div>
 
                                 </div>

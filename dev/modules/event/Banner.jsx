@@ -9,6 +9,7 @@ import Form from 'react-bootstrap/Form';
 import googlelogo from "public/assests/GoogleLogo.svg";
 import fb from "public/assests/fb.svg";
 import apple from "public/assests/apple.svg";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -64,11 +65,12 @@ const Banner = () => {
                   <Button className={` ${styles.inputbtn}`}>Start Planning</Button>
                 </Col>
               </Row>
-            <div className="d-flex justify-content-between">
+            <div className="d-flex items-center justify-content-between">
               <h5>
               You can also sign up using:
               </h5>
-              <h5>Already have an account? Log in</h5>
+              <h5 className="text-black flex items-center">Already have an account? {" "}
+                <Link href="loginin" className="text-black" style={{color: "black"}}><h5 className="cursor-pointer ">{" "}Log In</h5></Link></h5>
             </div>
               <div className="d-flex">
                 <div className={styles.logo}>

@@ -4,6 +4,9 @@ import {MyCard,MyCardBlue,MyCardYellow, MyCardOne} from "./MyCard";
 import styles from "/styles/home/Index.module.scss";
 import imageone from "public/assests/home_img/Download.svg"
 import arabian2 from "public/assests/home_img/arabian.jpg"
+import invitation from 'public/assests/home_img/invitation.png'
+import nikkah from 'public/assests/home_img/nikkah.png'
+import checklist from 'public/assests/home_img/Checklist.jpg'
 
 
 const Plan = () => {
@@ -39,7 +42,7 @@ const Plan = () => {
           </Col>
           <Col lg={4} md={6} sm={6} xs={6}>
           <MyCardBlue
-              imgsrc="/../assests/home_img/1-04.svg"
+              imgsrc={invitation}
               head="Shop Invitation Card"
               para="Browse through venues, catering, decor & more with our most economical platform for make your dream wedding comes true."
               btn="Browse Invitation"
@@ -47,7 +50,7 @@ const Plan = () => {
           </Col>
         <Col lg={4} md={6} sm={6} xs={6}>
           <MyCardBlue
-              imgsrc="/../assests/home_img/1-04.svg"
+              imgsrc={nikkah}
               head="Nikkah Template"
               para="Browse through venues, catering, decor & more 
                     with our most economical platform for make your dream
@@ -57,7 +60,7 @@ const Plan = () => {
           </Col>
           <Col lg={4} md={6} sm={6} xs={6}>
           <MyCardYellow
-              imgsrc="/../assests/home_img/temp1.svg"
+              imgsrc={checklist}
               head="Checklist Creation"
               para="Browse through venues, catering, decor & more 
                     with our most economical platform for make your dream
