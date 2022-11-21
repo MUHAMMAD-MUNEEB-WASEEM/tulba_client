@@ -167,11 +167,11 @@ const Vendor = (props) => {
             </div>
           </div>
 
-          <div className={styles.signup_inputbox}>
-            <div className="bg-red-500 opacity-95 text-white text-center px-2 py-2 font-semibold text-base  rounded-3xl">
+          {/* <div className={`{styles.signup_inputbox} `}>
+            <div className="bg-red-500 opacity-95 text-white lg:px-2 lg:py-2 font-semibold text-base   rounded-3xl sm:hidden md:hidden lg:flex lg:justify-center ">
               Premium Vendors are displayed on front page
             </div>
-          </div>
+          </div> */}
         </form>
         <div className={` text-center ${styles.login_link}`}>
           {/* Already have an account! <Link href="/loginin"> Log in now</Link> */}

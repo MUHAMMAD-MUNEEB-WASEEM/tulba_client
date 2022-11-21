@@ -89,11 +89,11 @@
     color: "black";
     width: 100%;
     padding: 5px 0px;
-    border-radius: 20px
+    border-radius: 20px;
   }
 
-  .input::placeholder{
-    color: "black"
+  .input::placeholder {
+    color: "black";
   }
 
   .inputbtn {
@@ -118,22 +118,25 @@
       margin-top: 16px;
     }
   }
+  .dreamContainer {
+    display: flex;
+    flex-direction: column;
 
-  .dream {
-    color: #f85757;
-    font-family: "DM Serif Display";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 70px;
-    line-height: 65px;
-    margin-left: 14px;
+    .dream {
+      color: #f85757;
+      font-family: "DM Serif Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 70px;
+      line-height: 65px;
+      margin-left: 14px;
 
-    @media (max-width: 767px) {
-      font-size: 30px;
-      line-height: 30px;
+      @media (max-width: 767px) {
+        font-size: 30px;
+        line-height: 30px;
+      }
     }
   }
-
   // .eventstyle {
   //   margin-left: 50px;
   // }
@@ -142,6 +145,11 @@
     width: 20px;
     border-radius: 100px;
     background-color: #f85757;
+      @media (max-width: 768px) {
+      margin-left: 5px;
+      position: relative;
+      bottom: 12px;
+    }
   }
   .form {
     // margin-left: 90px;
@@ -151,19 +159,30 @@
     }
   }
 
-  .event {
-    color: #2c5cb6;
-    font-family: "DM Serif Display";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 70px;
-    line-height: 87px;
-    // margin-right: 14px;
+  .eventContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: 768px) {
+      margin-top: 0;
+    position: relative;
+    bottom: 10px;
+    }
+   
+    .event {
+      color: #2c5cb6;
+      font-family: "DM Serif Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 70px;
+      line-height: 87px;
+      // margin-right: 14px;
 
-    @media (max-width: 767px) {
-      font-size: 30px;
-      line-height: 30px;
-      margin-top: 38px;
+      @media (max-width: 767px) {
+        font-size: 30px;
+        line-height: 30px;
+        margin-top: 38px;
+      }
     }
   }
 
@@ -273,10 +292,10 @@
 }
 .faqCardsFull {
   height: 700px !important;
-  background-image: linear-gradient(
-    rgb(255, 255, 255) 75%,
-    rgba(231, 230, 230, 0.9)
-  );
+  // background-image: linear-gradient(
+  //   rgb(255, 255, 255) 75%,
+  //   rgba(231, 230, 230, 0.9)
+  // );
 }
 .faqCardsHalf {
   height: 400 !important;
@@ -291,25 +310,24 @@
     margin-left: -25px;
     height: 50px;
     width: 50px;
-    @-webkit-keyframes bounce {
-      0% {
-        bottom: 5px;
-      }
-      25%,
-      75% {
-        bottom: 15px;
-      }
-      50% {
-        bottom: 20px;
-      }
-      100% {
-        bottom: 0;
-      }
-    }
-      -webkit-animation: bounce 1s infinite;
-    }
+    // @-webkit-keyframes bounce {
+    //   0% {
+    //     bottom: 5px;
+    //   }
+    //   25%,
+    //   75% {
+    //     bottom: 15px;
+    //   }
+    //   50% {
+    //     bottom: 20px;
+    //   }
+    //   100% {
+    //     bottom: 0;
+    //   }
+    // }
+    //   -webkit-animation: bounce 1s infinite;
   }
-
+}
 
 /////////////////////////////////// Template style
 .ImgOrder1 {
@@ -455,7 +473,6 @@
     }
   }
 
-  
   .plan_img {
     @media (max-width: 767px) {
       height: 100px;
@@ -469,11 +486,10 @@
   }
 }
 
-
 .plan_img1 {
   min-width: 80%;
   min-height: 60%;
-  
+
   @media (max-width: 767px) {
     height: 100px;
     width: 100px;
@@ -509,7 +525,7 @@
       left: 0px !important;
       @media (max-width: 767px) {
         top: 90px !important;
-      height: 30px !important;
+        height: 30px !important;
         left: 20px !important;
       }
     }
@@ -1114,10 +1130,10 @@
   img {
     position: absolute;
     top: 50px !important;
-      left: -100px !important;
+    left: -100px !important;
     @media (max-width: 767px) {
       top: 40px !important;
-    height: 30px !important;
+      height: 30px !important;
       left: 10px !important;
     }
   }
