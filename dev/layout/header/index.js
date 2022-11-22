@@ -57,7 +57,7 @@ const Header = () => {
                     src={tulbalogo}
                     alt="tulbalogo"
                     loading="lazy"
-                    // className="h-12 w-12"
+                  // className="h-12 w-12"
                   />
                 </Link>
               </div>
@@ -91,7 +91,7 @@ const Header = () => {
                       {/* <li className={style.nav__submenu_item}>
                       <a>Events</a>
                     </li> */}
-                     <li className={style.nav__submenu_item}>
+                      <li className={style.nav__submenu_item}>
                         <Link href={""}>Checklist</Link>
                       </li>
                       <li className={style.nav__submenu_item}>
@@ -120,24 +120,28 @@ const Header = () => {
                   </Link>
                 </div>
                 {/* Cart */}
+
+              </div>
+              <div className="flex align-items-center  justify-center">
+                <div
+                  onClick={() => setOpen(true)}
+                  className={`${open ? style.menu_btn : `${style.menu_btn} ${style.menu_btn} `
+                    }`}
+                    style={{padding:"0px !important", marginBottom: '30px'}}
+                >
+                  <div className={style.menu_childSidebar}></div>
+                </div>
                 <div
                   onClick={() => setModalShow(true)}
-                  className={`cursor-pointer ${style.cart}`}
+                  className={`cursor-pointer ${style.cart} m-0 p-0`}
                 >
                   <Image src={cart} alt="cart" loading="lazy" />
                 </div>
               </div>
-              <div
-                onClick={() => setOpen(true)}
-                className={`${
-                  open ? style.menu_btn : `${style.menu_btn} ${style.menu_btn}`
-                }`}
-              >
-                <div className={style.menu_childSidebar}></div>
-              </div>
+
             </div>
           </Navbar>
-     
+
         </div>
         <div className={style.sidebar_option}>
           <Sidebar setOpen={setOpen} open={open} />
