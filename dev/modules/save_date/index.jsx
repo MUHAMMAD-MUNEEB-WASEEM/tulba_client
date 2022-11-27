@@ -61,9 +61,9 @@ const Save_date = () => {
                         <p className={styles.price}>
                             20 $
                         </p>
-                        <a href="#">Edit -> </a>
+                        <a href="#">Edit -&gt; </a>
                         <hr />
-                        <div>
+                        {/* <div>
                             <h3 className="mt-3">Paper Save the date - terian Portrait</h3>
                             <div className="d-flex justify-content-start mt-2">
                                 <span className="">Colour :</span>
@@ -81,7 +81,7 @@ const Save_date = () => {
                                 Free
                             </p>
                             <a href="#">Edit -> </a>
-                        </div>
+                        </div> */}
 
                         <div className={styles.box}>
                             <h3>

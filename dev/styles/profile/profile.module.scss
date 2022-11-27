@@ -17,6 +17,7 @@
       flex: 6;
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
 
       .pictures {
         flex: 2;
@@ -62,6 +63,9 @@
       width: 150px;
     }
   }
+
+
+
   .stepper {
     margin-top: 10%;
     h5 {
@@ -81,6 +85,7 @@
   .top {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     .userInfo {
       flex-direction: column;
       align-items: center;
@@ -89,6 +94,10 @@
       .name {
         font-size: 12px;
       }
+    }
+    .progress{
+      justify-content: center;
+      align-items: center;
     }
   }
 }

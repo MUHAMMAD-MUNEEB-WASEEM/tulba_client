@@ -223,14 +223,14 @@ const Wedcard = () => {
 
 
                     <Col md={3} className={styles.filterButton}>
-                        <span></span>
+                        <span>1,000+ relevant results</span>
                         <button onClick={()=>{showMobileCard(!mobileCard)}} > Filters </button>
                     </Col>
 
                     <Col lg={9}>
                         <div className='d-flex align-items-center'>
                             <h1>Shop Our hand crafted Invitations</h1>
-                            <h6 className="mt-2 mx-1">(1,000+ relevant results )</h6>
+                            <h6 className={`mt-2 mx-1 ${styles.number}`}>(1,000+ relevant results )</h6>
                         </div>
                         <Row>
                             <Col lg={4} md={6} className="my-2">

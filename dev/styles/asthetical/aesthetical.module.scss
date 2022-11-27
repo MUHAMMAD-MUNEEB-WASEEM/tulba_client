@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import "../fonts/font.scss";
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 
 .asthetical {
   h2 {
@@ -27,7 +26,7 @@
     font-weight: 600;
   }
   p {
-    font-family:  $GiloryRegular;
+    font-family: $GiloryRegular;
     font-size: 20px;
     line-height: 10px;
     text-transform: capitalize;
@@ -141,7 +140,7 @@
     margin: 20px 0px;
 
     p {
-      font-family:$GiloryRegular;
+      font-family: $GiloryRegular;
       font-size: 12px;
       line-height: 15px;
       text-transform: capitalize;
@@ -172,7 +171,7 @@
       color: #000000;
     }
     span {
-      font-family:$GiloryRegular;
+      font-family: $GiloryRegular;
       font-size: 14px;
       line-height: 12px;
       color: #868484;
@@ -202,27 +201,32 @@
       text-transform: capitalize;
       color: #f85757;
       width: 140px;
+    }
 
+    @media screen and (max-width:767px) {
+      width: 300px;
+      .check_btn{
+        margin-left: 0px;
+      }
     }
   }
-  .mail{
-    h4{
-        font-family: $GiloryBold;
-font-size: 24px;
-line-height: 28px;
-text-transform: capitalize;
-color: #000000;
+  .mail {
+    h4 {
+      font-family: $GiloryBold;
+      font-size: 24px;
+      line-height: 28px;
+      text-transform: capitalize;
+      color: #000000;
     }
-    p{
-        font-family:$GiloryRegular;
-font-size: 19px;
-line-height: 30px;
-color: #000000;
-a{
-    color: #f85757 !important;
-    font-weight: 600;
-}
+    p {
+      font-family: $GiloryRegular;
+      font-size: 19px;
+      line-height: 30px;
+      color: #000000;
+      a {
+        color: #f85757 !important;
+        font-weight: 600;
+      }
     }
-    
   }
 }

@@ -98,7 +98,9 @@
 
 .filterButton {
   display: none;
-
+  span {
+    font-weight: 600;
+  }
   button {
     border: 3px solid #f85757;
     border-radius: 20px;
@@ -124,8 +126,6 @@
 
 .mobileCard {
   display: none;
-
-
 
   .closeButton {
     background-color: #f85757;
@@ -159,7 +159,7 @@
     // bottom: 0;
   }
 
-    div {
+  div {
     padding: 2% 6%;
 
     .sideBarList {
@@ -383,5 +383,10 @@
   p {
     font-size: 17px;
     margin-top: 3px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .number {
+    display: none;
   }
 }
