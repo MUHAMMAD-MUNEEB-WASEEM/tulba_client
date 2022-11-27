@@ -23,6 +23,7 @@ module.exports = (phase) => {
     swcMinify: true,
     images: {
       domains: ["https://nameless-sierra-86136.herokuapp.com/"],
+      domains: ["https://nameless-sierra-86136.herokuapp.com/"], hostname: "images.pexels.com"
     },
     env: {
       base_url: "https://nameless-sierra-86136.herokuapp.com/",

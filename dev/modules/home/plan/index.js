@@ -23,6 +23,7 @@ const Plan = () => {
           <Col lg={4} md={6} sm={6} xs={6}>
             <MyCard
               // imgsrc={imageone}
+              path='/Vendor'
               imgsrc={arabian2}
               
               head="Vendor Search"
@@ -38,6 +39,7 @@ const Plan = () => {
               head="Event Website"
               para="Browse through venues, catering, decor & more with our most economical platform for make your dream wedding comes true."
               btn="Create Free Site"
+              path='/event'
             />
           </Col>
           <Col lg={4} md={6} sm={6} xs={6}>
@@ -46,6 +48,7 @@ const Plan = () => {
               head="Shop Invitation Card"
               para="Browse through venues, catering, decor & more with our most economical platform for make your dream wedding comes true."
               btn="Browse Invitation"
+              path='/store'
             />
           </Col>
         <Col lg={4} md={6} sm={6} xs={6}>
@@ -56,6 +59,7 @@ const Plan = () => {
                     with our most economical platform for make your dream
                     wedding comes true."
               btn="Browse Card"
+              path='/template'
             />
           </Col>
           <Col lg={4} md={6} sm={6} xs={6}>
@@ -66,6 +70,7 @@ const Plan = () => {
                     with our most economical platform for make your dream
                     wedding comes true."
               btn="Start Planning"
+              path='/template'
             />
           </Col>
           <Col lg={4} md={6}  sm={6} xs={6}>
@@ -76,6 +81,8 @@ const Plan = () => {
                     with our most economical platform for make your dream
                     wedding comes true."
               btn="Rsvp Invites"
+              path='/Rsvp'
+
             />
           </Col>
         </Row>
