@@ -19,23 +19,23 @@ const Form_checkout = () => {
             <p className='mb-5'>All orders of your carts are here.</p>
             <Form>
               <Row className="mb-3">
-                <Form.Group as={Col} controlId="formGridEmail">
+                <Form.Group as={Col} lg={6} sm={12}  controlId="formGridEmail">
                   <Form.Label>First Name</Form.Label>
                   <Form.Control type="text" value="Waleed" />
                 </Form.Group>
 
-                <Form.Group as={Col} controlId="formGridPassword">
+                <Form.Group as={Col} lg={6} sm={12} controlId="formGridPassword">
                   <Form.Label>Last Name</Form.Label>
                   <Form.Control type="text" />
                 </Form.Group>
               </Row>
               <Row className="mb-3">
-                <Form.Group as={Col} controlId="formGridEmail">
+                <Form.Group as={Col} lg={6} sm={12} controlId="formGridEmail">
                   <Form.Label>Email Address</Form.Label>
                   <Form.Control type="email" />
                 </Form.Group>
 
-                <Form.Group as={Col} controlId="formGridPassword">
+                <Form.Group as={Col} lg={6} sm={12} controlId="formGridPassword">
                   <Form.Label>Address</Form.Label>
                   <Form.Control type="text" />
                 </Form.Group>
@@ -43,17 +43,17 @@ const Form_checkout = () => {
 
 
               <Row className="mb-3">
-                <Form.Group as={Col} controlId="formGridCity">
+                <Form.Group as={Col} lg={4} sm={12} controlId="formGridCity">
                   <Form.Label>Apt</Form.Label>
                   <Form.Control />
                 </Form.Group>
 
-                <Form.Group as={Col} controlId="formGridCity">
+                <Form.Group as={Col} lg={4} sm={12} controlId="formGridCity">
                   <Form.Label>City</Form.Label>
                   <Form.Control />
                 </Form.Group>
 
-                <Form.Group as={Col} controlId="formGridZip">
+                <Form.Group as={Col} lg={4} sm={12} controlId="formGridZip">
                   <Form.Label>Zip Code</Form.Label>
                   <Form.Control />
                 </Form.Group>
@@ -113,7 +113,7 @@ const Form_checkout = () => {
                   </Form.Group>
                 </Col>
                 <Col lg={5} className="mt-5">
-                  <Button variant="outline-danger" className="mt-2">Apply Now</Button>{' '}
+                  <Button variant="outline-danger" className={`mt-2 w-28 ${styles.applyBtn} `}>Apply Now</Button>{' '}
                 </Col>
               </Row>
               <div className='my-3'>
