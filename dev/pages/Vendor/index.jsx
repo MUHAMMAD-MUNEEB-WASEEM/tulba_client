@@ -127,15 +127,16 @@ const Vendor = (props) => {
             />
           </div> */}
          <div className={styles.signup_inputbox}>
+            <Form.Label>Select Category</Form.Label>
             <Row>
-              <Col lg={12} md={12}
-                className="rsvptable">
+              <Col 
+                className={styles.category}>
                 <FloatingLabel
                   controlId="floatingSelect"
-                  className="my-4 "
                 >
-                  <Form.Select aria-label="Floating label select example">
-                    <option>Select Category</option>
+                
+                  <Form.Select aria-label="Floating label select example" className="py-3"  >
+                    <option className="hidden">Select Category</option>
                     <option value="Catering">Catering</option>
                     <option value="Decoration">Decoration</option>
                     <option value="Venue">Venue</option>
