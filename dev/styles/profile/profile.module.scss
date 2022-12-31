@@ -54,7 +54,7 @@
         }
       }
     }
-    
+
     .progress {
       flex: 2;
       display: flex;
@@ -63,8 +63,6 @@
       width: 150px;
     }
   }
-
-
 
   .stepper {
     margin-top: 10%;
@@ -90,12 +88,20 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      .info {
+        text-align: center;
+      }
+      .pictures {
+        display: flex;
+        align-items: center;
+        padding-left: 20%;
+      }
 
       .name {
         font-size: 12px;
       }
     }
-    .progress{
+    .progress {
       justify-content: center;
       align-items: center;
     }

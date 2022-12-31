@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import Footer from "layout/footer";
 import Header from "layout/header";
-import Main from "modules/profile/Main"
+import Main from "modules/profile/Main";
 
 
 
@@ -11,9 +11,9 @@ const Profile = () => {
             <Header />
             <Main />
             <Footer />
-            
-        </div>
-    )
-}
 
-export default Profile
+        </div>
+    );
+};
+
+export default Profile;

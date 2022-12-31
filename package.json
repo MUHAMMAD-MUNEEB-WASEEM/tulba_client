@@ -34,6 +34,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
+    "react-sweet-progress": "^1.1.2",
     "sequelize": "^6.20.1",
     "sharp": "^0.30.7",
     "xss-clean": "^0.1.1"
