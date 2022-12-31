@@ -7,7 +7,8 @@ import Pagination from 'react-bootstrap/Pagination';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import vendor from "styles/home/Index.module.scss";
-import { Stepper, Step } from 'react-form-stepper';
+import SideBar from "./SideBar";
+// import { Stepper, Step } from 'react-form-stepper';
 
 
 let active = 2;
@@ -26,7 +27,7 @@ const VendorCard = () => {
             <Container>
                 <Row>
                     <Col lg={3} className={`my-5 ${styles.vendors}`}>
-                        <nav className="navbar-light bg-light">
+                        {/* <nav className="navbar-light bg-light">
                             <ul className="navbar-nav flex-column mr-auto">
                                 <h1 className="px-4 my-4">Categories</h1>
 
@@ -112,7 +113,8 @@ const VendorCard = () => {
                                     <option className={styles.opt} value="Lahore">Lahore</option>
                                 </Form.Select>
                             </FloatingLabel>
-                        </nav>
+                        </nav> */}
+                        <SideBar />
                     </Col>
                     <Col lg={9} className={styles.cardss}>
                         <Row className="g-2 my-5 mx-3">
@@ -147,7 +149,7 @@ const VendorCard = () => {
                             <Col md={2} className="p-0">
                                 <Button className={`p-3 ${styles.inputbtn}`}>Search here</Button>
                             </Col> */}
-                        </Row> 
+                        </Row>
                         <Row>
                             <Col>
                                 <div className={` d-flex justify-content-start ${vendor.tools}`}>

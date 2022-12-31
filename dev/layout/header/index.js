@@ -92,7 +92,7 @@ const Header = () => {
                       <a>Events</a>
                     </li> */}
                       <li className={style.nav__submenu_item}>
-                        <Link href={""}>Checklist</Link>
+                        <Link href={"/checklist"}>Checklist</Link>
                       </li>
                       <li className={style.nav__submenu_item}>
                         <Link href={"/Rsvp"}>Rsvp</Link>

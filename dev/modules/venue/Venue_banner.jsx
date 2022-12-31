@@ -1,10 +1,10 @@
-import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import Venue_content from './Venue_content'
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import Venue_content from './Venue_content';
 import styles from "/styles/venue/venue.module.scss";
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-import { Stepper, Step } from 'react-form-stepper';
+// import { Stepper, Step } from 'react-form-stepper';
 
 const percentage = 75;
 
@@ -43,16 +43,16 @@ const Venue_banner = () => {
         </Row>
         <Row className="my-5">
           <p className='text-center'>Complete the Below process for your wedding to get started</p>
-          <Stepper activeStep={2}>
+          {/* <Stepper activeStep={2}>
             <Step label=" Complete Your Profile" />
             <Step label=" Add Your Event" />
             <Step label=" Shop Invites & Nikkah Template" />
             <Step label=" Guest account" />
-          </Stepper>
+          </Stepper> */}
         </Row>
       </Container>
     </>
-  )
-}
+  );
+};
 
-export default Venue_banner
+export default Venue_banner;
