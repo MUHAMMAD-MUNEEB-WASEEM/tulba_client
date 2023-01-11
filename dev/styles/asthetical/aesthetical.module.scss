@@ -254,6 +254,7 @@ $deviceMaxWidth: 1024px;
     .last {
       display: flex;
       gap: 3%;
+      justify-content: space-between;
       .select {
         width: 25%;
         margin-left: 1%;
@@ -273,7 +274,12 @@ $deviceMaxWidth: 1024px;
         font-weight: 600;
         cursor: pointer;
 
-        &:hover{
+        a {
+          color: black;
+          text-decoration: none;
+        }
+
+        &:hover {
           background: #f85757;
           color: #fff;
         }
@@ -443,11 +449,10 @@ $deviceMaxWidth: 1024px;
   }
 }
 
-
-  .text {
-      font-size: 18px;
-      color: black;
-      font-weight: 600;
-      display: inline-block;
-      margin-bottom: 3px;
-    }
+.text {
+  font-size: 18px;
+  color: black;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 3px;
+}

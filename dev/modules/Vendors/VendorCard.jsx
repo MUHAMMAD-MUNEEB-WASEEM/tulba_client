@@ -26,7 +26,7 @@ const VendorCard = () => {
         <>
             <Container>
                 <Row>
-                    <Col lg={3} className={`my-5 ${styles.vendors}`}>
+                    <Col lg={3} className={` ${styles.vendors}`}>
                         {/* <nav className="navbar-light bg-light">
                             <ul className="navbar-nav flex-column mr-auto">
                                 <h1 className="px-4 my-4">Categories</h1>
@@ -117,42 +117,12 @@ const VendorCard = () => {
                         <SideBar />
                     </Col>
                     <Col lg={9} className={styles.cardss}>
-                        <Row className="g-2 my-5 mx-3">
-                            {/* <Col md={5} className="btstrp p-0">
-                                <FloatingLabel
-                                    controlId="floatingInputGrid"
-                                    label="Email address">
-                                    <Form.Control
-                                        type="email"
-                                        placeholder="Search Vendors, Catering"
-                                        className={styles.input}
-                                    />
-                                </FloatingLabel>
-                            </Col>
-                            <Col md={5} className="btstrp p-0">
-                                <FloatingLabel
-                                    controlId="floatingSelectGrid"
-                                    label="Select Location"
-                                >
-                                    <Form.Select
-                                        aria-label="Floating label select example"
-                                        className={styles.input}
-                                    >
+                        <Row className="g-2  mx-3">
 
-                                        <option>In (E.g. Karachi)</option>
-                                        <option className="opt" value="Islamabad">Islamabad</option>
-                                        <option className={styles.opt} value="Karachi">Karachi</option>
-                                        <option className={styles.opt} value="Lahore">Lahore</option>
-                                    </Form.Select>
-                                </FloatingLabel>
-                            </Col>
-                            <Col md={2} className="p-0">
-                                <Button className={`p-3 ${styles.inputbtn}`}>Search here</Button>
-                            </Col> */}
                         </Row>
                         <Row>
                             <Col>
-                                <div className={` d-flex justify-content-start ${vendor.tools}`}>
+                                <div className={` d-none justify-content-start ${vendor.tools}`}>
                                     <div className="mx-4">
                                         <a href="#">Best Matches</a>
                                     </div>

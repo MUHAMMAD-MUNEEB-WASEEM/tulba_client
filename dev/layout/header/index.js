@@ -106,7 +106,7 @@ const Header = () => {
                     <Link href={"/store"}>Shop Invitation</Link>
                   </li>
                   <li>
-                    <a href="#/">Nikkah Templates</a>{" "}
+                    <Link href={"/nikkah-templates"}>Nikkah Template</Link>
                   </li>
                 </ul>
                 <div className={style.btn_header}>

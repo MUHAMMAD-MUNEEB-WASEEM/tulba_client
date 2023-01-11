@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import Image from "next/image";
 import styles from "/styles/home/Index.module.scss";
 import { Container, Row, Col } from "react-bootstrap";
@@ -7,7 +7,7 @@ import { AiOutlineDownCircle, AiOutlineUpCircle } from "react-icons/ai";
 
 
 const Faq = () => {
-  const [faq, showFaq] = useState(false)
+  const [faq, showFaq] = useState(false);
   return (
     <>
       <Container
@@ -29,20 +29,20 @@ const Faq = () => {
                 <Faqcard />
               </div>
             </div>
-              <div className={styles.faqButton}>
-              <div style={{ cursor: 'pointer' }} className={`${!faq && styles.pulse}`} onClick={()=>showFaq(!faq)}>
-                  {!faq?
+            <div className={styles.faqButton}>
+              <div style={{ cursor: 'pointer', marginTop: '5px' }} className={`${!faq && styles.pulse}`} onClick={() => showFaq(!faq)}>
+                {!faq ?
                   <AiOutlineDownCircle size={26} />
                   :
                   <AiOutlineUpCircle size={26} />
-                  }
-                </div>
+                }
               </div>
+            </div>
           </Col>
         </Row>
       </Container>
     </>
-  )
-}
+  );
+};
 
-export default Faq
+export default Faq;
