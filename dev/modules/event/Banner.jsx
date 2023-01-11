@@ -10,13 +10,17 @@ import googlelogo from "public/assests/GoogleLogo.svg";
 import fb from "public/assests/fb.svg";
 import apple from "public/assests/apple.svg";
 import Link from "next/link";
+import SignupPopup from './SignupPopup';
+import { useState } from "react";
 
-const cities = ['Abbottabad', 'Astore', 'Attock', 'Awaran', 'Badin', 'Bagh', 'Bahawalnagar', 'Bahawalpur', 'Bajaur', 'Bannu', 'Barkhan', 'Batagram', 'Bhakkar', 'Bhimber', 'Buner', 'Chagai', 'Chakwal', 'Charsadda', 'Chiniot', 'Dadu', 'Darel', 'Dera-Bugti', 'Dera-Ghazi-Khan', 'Dera-Ismail-Khan', 'Diamer', 'Duki', 'Faisalabad', '', 'Ghizer', 'Ghotki', 'Gilgit', 'Gujranwala', 'Gujrat', 'Gupis', 'Yasin', 'Gwadar', 'Hafizabad', 'Hangu', 'Haripur', 'Harnai', 'Hattian', 'Haveli', 'Hunza', 'Hyderabad', 'Islamabad', 'Jacobabad', 'Jafarabad', 'Jamshoro', 'JhalMagsi', 'Jhang', 'Jhelum', 'Kachhi', 'Kalat', 'Karachi-Central', 'Karachi-East', 'Karachi-South', 'Karachi-West', 'Karak', 'Kashmore', 'Kasur', 'Kech', 'Khairpur', 'Khanewal', 'Kharan', 'Kharmang', 'Khushab', 'Khuzdar', 'Khyber', 'Killa-Abdullah', 'Kohat', 'Kohlu', 'Kolai-Pallas', 'Korangi', 'Kotli', 'Kurram', 'Lahore', 'Lakki-Marwat', 'Larkana', 'Lasbela', 'Layyah', 'Lodhran', 'Loralai', 'Lower-Chitral', 'Lower-Dir', 'Lower-Kohistan', 'Malakand', 'Malir', 'Mandi-Bahauddin', 'Mansehra', 'Mardan', 'Mastung', 'Matiari', 'Mianwali', 'Mirpur-Khas', 'Mirpur', 'Mohmand', 'Multan', 'Musakhel', 'Muzaffarabad', 'Muzaffargarh', 'Nagar', 'Nankana-Sahib', 'Narowal', 'Naseerabad', 'Naushahro-Firoze', 'Neelum', 'North-Waziristan', 'Nowshera', 'Nushki', 'Okara', 'Orakzai', 'Pakpattan', 'Panjgur', 'Peshawar', 'Pishin', 'Poonch', 'Qambar-Shahdadkot', 'Qilla-Saifullah', 'Quetta', 'Rahim-Yar-Khan', 'Rajanpur', 'Rawalpindi', 'Roundu', 'Sahiwal', 'Sanghar', 'Sargodha', 'Shaheed-Benazirabad', 'Shaheed', 'Sikandarabad', 'Shangla', 'Sheikhupura', 'Sherani', 'Shigar', 'Shikarpur', 'Sialkot', 'Sibi', 'Skardu', 'Sohbatpur', 'South', 'Waziristan', 'Sudhnutti', 'Sujawal', 'Sukkur', 'Swabi', 'Swat', 'Tando', 'Allahyar', 'Tando', 'Muhammad', 'Khan', 'Tangir', 'Tank', 'Tharparkar', 'Thatta', 'Toba', 'Tek', 'Singh', 'Tor', 'Ghar', 'Umerkot', 'Upper', 'Chitral', 'Upper', 'Dir', 'Upper', 'Kohistan', 'Vehari', 'Washuk', 'Zhob', 'Ziarat'];
 
 
 const Banner = () => {
+  const [modal, setModal] = useState(false);
   return (
     <>
+
+      {modal && <SignupPopup modal={modal} setModal={setModal} />}
       <Container fluid className="my-5 p-0">
         <Row>
           <Col lg={6} className={` ${styles.banner}`}>
@@ -42,52 +46,26 @@ const Banner = () => {
                     label="Email address">
                     <Form.Control
                       type="email"
-                      placeholder="Search Vendors, Catering"
+                      placeholder="Enter Your Email"
                       className={styles.input}
                     />
                   </FloatingLabel>
                 </Col>
                 <Col md={5} className="btstrp p-0">
-                  {/* <FloatingLabel
-                    controlId="floatingSelectGrid"
-                    label="Select Location"
-                  >
-                    <Form.Select
-                      aria-label="Floating label select example"
-                      className={styles.input}
-                    >
-
-                      <option>In (E.g. Karachi)</option>
-                      <option value="Islamabad">Islamabad</option>
-                      <option value="Karachi">Karachi</option>
-                      <option value="Lahore">Lahore</option>
-                    </Form.Select>
-                  </FloatingLabel> */}
                   <FloatingLabel
                     controlId="floatingInputGrid"
-                    label="Search Location">
-
+                    label="First And Last Name">
                     <Form.Control
                       type="text"
-                      list='locations'
-
-
-                      placeholder="Search Vendors, Catering"
+                      placeholder="First And Last Name"
                       className={styles.input}
                     // <AiOutlineSearch />
-
                     />
-
-                    <datalist id="locations" className={`hidden text-black bg-white`} >
-                      {cities.map((item, index) =>
-                        (<option className='bg-white' key={index} value={item}>{item}</option>)
-                      )}
-                    </datalist>
                   </FloatingLabel>
                 </Col>
 
                 <Col md={2} sm={12} className="p-0">
-                  <Button className={` ${styles.inputbtn}`}>Start Planning</Button>
+                  <Button className={` ${styles.inputbtn}`} onClick={() => setModal(!modal)} >Start Planning</Button>
                 </Col>
               </Row>
 
