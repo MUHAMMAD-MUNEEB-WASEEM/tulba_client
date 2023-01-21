@@ -51,10 +51,9 @@ function BasicExample() {
                 className="my-4 "
               >
                 <Form.Select aria-label="Floating label select example">
-                  <option>Filter List</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                  <option className="hidden">Invited</option>
+                  <option className="cursor-pointer" value="1">Yes</option>
+                  <option  value="2">No</option>
                 </Form.Select>
               </FloatingLabel>
             </Col>

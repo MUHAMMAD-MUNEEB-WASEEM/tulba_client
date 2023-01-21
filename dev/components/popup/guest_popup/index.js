@@ -17,9 +17,12 @@ const AddGuestModal = (props) => {
             >
                 <Modal.Body>
 
-                    <span className="d-flex justify-content-start  items-center">
+                    <span className="d-flex justify-content-between  items-center">
+                        <div className="d-flex justify-content-start  items-center">
                         <RiTodoFill className={` ${styles.icon} `} />
-                        <span className={`${styles.head} border`}>Add New Guest</span>
+                        <span className={`${styles.head} `}>Add New Guest</span>
+                        </div>
+                        <div onClick={props.onHide} className={styles.closeButton}>X</div>
                     </span>
                     <p className={styles.subtitle}>Create new task for you task list</p>
                     <Row>
@@ -36,10 +39,10 @@ const AddGuestModal = (props) => {
                             </Form.Group>
                         </Col>
                     </Row>
-                    <Form.Group className="mb-2" controlId="formGroupEmail">
+                    {/* <Form.Group className="mb-2" controlId="formGroupEmail">
                         <Form.Label>Select Avatar</Form.Label>
                         <Form.Control type="file" placeholder="Enter avatar" />
-                    </Form.Group>
+                    </Form.Group> */}
                     <Form.Group className="mb-2" controlId="formGroupEmail">
                         <Form.Label>Location</Form.Label>
                         <Form.Control type="email" placeholder="ABC Road" />
@@ -51,12 +54,13 @@ const AddGuestModal = (props) => {
 
                 </Modal.Body>
                 <Row>
+                    <Col md={3}></Col>
                     <Col md={6}>
                         <Button className={styles.btn} variant="danger" onClick={props.onHide}>Add Guest</Button>
                     </Col>
-                    <Col md={6}>
+                    {/* <Col md={6}>
                         <Button className={styles.btn} variant="danger" onClick={props.onHide}>Close</Button>
-                    </Col>
+                    </Col> */}
                 </Row>
             </Modal>
         </div>

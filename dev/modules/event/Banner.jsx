@@ -22,7 +22,7 @@ const Banner = () => {
 
       {modal && <SignupPopup modal={modal} setModal={setModal} />}
       <Container fluid className="my-5 p-0">
-        <Row>
+        <Row style={{marginTop:'-50px'}}>
           <Col lg={6} className={` ${styles.banner}`}>
             <Breadcrumb>
               <Breadcrumb.Item href="/" className={styles.brdcrumb}>Home</Breadcrumb.Item>
@@ -30,14 +30,14 @@ const Banner = () => {
             </Breadcrumb>
             <div>
               <div className='d-flex  justify-content-start'>
-                <div className={`my-4  ${styles.head_border}`}></div>
-                <h5>We got the best tools for your event, so hop on.</h5>
+                {/* <div className={`my-4  ${styles.head_border}`}></div> */}
+                {/* <h5>We got the best tools for your event, so hop on.</h5> */}
               </div>
               <h1 className="mb-2">Event Planner</h1>
-              <p>
+              {/* <p className={styles.bannerText}>
                 Get Listed all your wedding items and see their progress on the
                 go.
-              </p>
+              </p> */}
               <h4 className="my-3">Get Started</h4>
               <Row className={`g-2 mb-2 ${styles.castlebanner}`}>
                 <Col md={5} className="btstrp p-0">

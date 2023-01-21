@@ -18,12 +18,12 @@ const Banner = () => {
               <Breadcrumb.Item active className={styles.actbrdcrumb}>Vendors</Breadcrumb.Item>
             </Breadcrumb>
             <div>
-              <div className='d-flex  justify-content-start'>
+              {/* <div className='d-flex  justify-content-start'>
                 <div className={`my-4  ${styles.head_border}`}></div>
                 <h5>We got the best tools for your event, so hop on.</h5>
-              </div>
+              </div> */}
               <h1>Vendors</h1>
-              <p>
+              <p className={styles.bannerText}>
                 Browse through the many vendors of your choice and <br />
                 get the ultimate venue for your ultmiate wedding
               </p>

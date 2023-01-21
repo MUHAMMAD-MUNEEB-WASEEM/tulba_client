@@ -57,7 +57,7 @@ const Header = () => {
                     src={tulbalogo}
                     alt="tulbalogo"
                     loading="lazy"
-                  // className="h-12 w-12"
+                  className="h-12 w-12"
                   />
                 </Link>
               </div>

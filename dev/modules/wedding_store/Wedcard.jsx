@@ -28,7 +28,7 @@ const Wedcard = () => {
             {mobileCard &&
                 <div className='w-screen'>
                     <div className={styles.mobileCard}>
-                        <div className='d-flex justify-content-end'><div onClick={() => { showMobileCard(!mobileCard); }} className={styles.closeButton}>x</div> </div>
+                        <div className='d-flex justify-content-end'><div onClick={() => { showMobileCard(!mobileCard); }} className={styles.closeButton}> X </div> </div>
                         <div onClick={() => showPaper(!paper)} className={`${styles.sideBarList} ${paper && styles.actvelink} `}>
                             {!paper ?
                                 <AiOutlineRight size={20} />

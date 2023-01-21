@@ -10,10 +10,10 @@ const MyCard = (props) => {
   return (
     <>
       <div className={styles.redbox}>
-        <div className={` ${styles.back}`}>
+        <div style={{overflow:'hidden'}} className={` ${styles.back}`}>
           <Image
             src={props.imgsrc}
-            width={"300px"}
+            width={"350px"}
             height={"250px"}
             layout="fixed"
             alt="template"
@@ -39,11 +39,13 @@ const MyCardOne = (props) => {
   return (
     <>
       <div className={styles.redbox}>
-        <div className={` ${styles.back1}`}>
+        <div style={{overflow:'hidden'}} className={` ${styles.back1}`}>
           <Image
             src={props.imgsrc}
-            width={"400px"}
-            height={"250px"}
+            width={"432px"}
+            height={"280px"}
+           
+           
             layout="fixed"
             alt="template"
             className={`img-fluid ${styles.plan_img1}`}
