@@ -72,7 +72,7 @@ const MyCardYellow = (props) => {
   return (
     <>
       <div className={styles.yellowbox}>
-        <div className={`${styles.backgroundYellow}`}>
+        <div style={{overflow:"hiddden"}} className={`${styles.backgroundYellow}`}>
           <Image
             src={props.imgsrc}
             width={"480px"}

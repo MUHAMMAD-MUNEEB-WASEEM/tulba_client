@@ -501,302 +501,401 @@
   }
 }
 
-.redbox {
-  margin: 24px 0;
+// .redbox {
+//   margin: 24px 0;
 
-  .back {
-    // background-image: url("../../public/assests/home_img/Ellipse\ 1381.svg");
-    // background-size: cover;
-    height: 300px;
-    width: 300px;
-    border-radius: 100%;
-    background: #fa5856;
-    margin: 0 auto;
-    min-width: 80% !important;
-    min-height: 60% !important;
+//   .back {
+//     // background-image: url("../../public/assests/home_img/Ellipse\ 1381.svg");
+//     // background-size: cover;
+//     height: 300px;
+//     width: 300px;
+//     border-radius: 100%;
+//     background: #fa5856;
+//     margin: 0 auto;
+//     min-width: 80% !important;
+//     min-height: 60% !important;
+
+//     @media (max-width: 767px) {
+//       height: 150px;
+//       width: 150px;
+//     }
+//     img {
+//       position: absolute;
+//       top: 100px !important;
+//       left: 0px !important;
+//       @media (max-width: 767px) {
+//         top: 90px !important;
+//         height: 30px !important;
+//         left: 20px !important;
+//       }
+//     }
+//     span {
+//       @media (max-width: 767px) {
+//         height: 110px !important;
+//         width: 130px !important;
+//       }
+//     }
+//   }
+
+//   // .box {
+//   //   background: #fee7e6;
+//   //   border-radius: 25px;
+//   //   padding: 30px;
+//   //   &:hover {
+//   //     cursor: pointer;
+//   //   }
+
+//   //   @media (max-width: 767px) {
+//   //     padding: 10px;
+//   //     border-radius: 15px;
+//   //     background-color: #fff;
+//   //     width: 100%;
+//   //   }
+
+//   //   p {
+//   //     font-family: $GiloryRegular;
+//   //     font-size: 14px;
+//   //     line-height: 18px;
+//   //     color: #404040;
+
+//   //     @media (max-width: 767px) {
+//   //       display: none;
+//   //     }
+//   //   }
+
+//   //   h6 {
+//   //     font-family: "DM Serif Display";
+//   //     font-style: normal;
+//   //     font-weight: 400;
+//   //     font-size: 24px;
+//   //     line-height: 41px;
+//   //     text-transform: capitalize;
+//   //     color: #000000;
+
+//   //     @media (max-width: 767px) {
+//   //       font-size: 18px;
+//   //       line-height: 20px;
+//   //       font-weight: 700;
+//   //       margin-bottom: 8px;
+//   //     }
+//   //   }
+
+//   //   button {
+//   //     background: #f85757;
+//   //     border-radius: 37.5px;
+//   //     color: #fff;
+//   //     margin-top: 20px;
+//   //     border: 2px solid #f85757;
+
+//   //     &:hover {
+//   //       color: #000;
+//   //       background: none;
+//   //       border: 2px solid gray;
+//   //     }
+
+//   //     @media (max-width: 767px) {
+//   //       margin-top: 0px;
+//   //       font-size: 14px;
+//   //       padding: 8px !important;
+//   //       border-radius: 10px;
+//   //       background-color: #fff;
+//   //       color: #f85757;
+//   //       font-weight: 500;
+//   //       text-decoration: underline;
+//   //       border: none;
+//   //     }
+//   //   }
+//   // }
+// }
+
+// .bluebox {
+//   margin: 24px 0;
+
+//   .backgroundBlue {
+//     // background-image: url("../../public/assests/home_img/Ellipse\ 1380.svg");
+//     // background-size: cover;
+//     height: 300px;
+//     width: 300px;
+//     border-radius: 100%;
+//     background: #2a5cb9;
+//     margin: 0 auto;
+
+//     @media (max-width: 767px) {
+//       height: 150px;
+//       width: 150px;
+//       background: none;
+//     }
+//     span {
+//       @media (max-width: 767px) {
+//         height: 200px !important;
+//         width: 200px !important;
+//         background: none;
+//       }
+//     }
+//   }
+
+//   .box {
+//     background: #edf1f8;
+//     border-radius: 25px;
+//     padding: 30px;
+
+//     @media (max-width: 767px) {
+//       padding: 10px;
+//       border-radius: 15px;
+//       background-color: #fff;
+//       width: 100%;
+//     }
+
+//     p {
+//       font-family: $GiloryRegular;
+//       font-size: 14px;
+//       line-height: 18px;
+//       color: #404040;
+
+//       @media (max-width: 767px) {
+//         display: none;
+//       }
+//     }
+
+//     h6 {
+//       font-family: "DM Serif Display";
+//       font-style: normal;
+//       font-weight: 400;
+//       font-size: 24px;
+//       line-height: 41px;
+//       text-transform: capitalize;
+//       color: #000000;
+
+//       @media (max-width: 767px) {
+//         font-size: 16px;
+//         line-height: 20px;
+//         font-weight: 700;
+//       }
+//     }
+
+//     button {
+//       background: #2b5bb5;
+//       border-radius: 37.5px;
+//       color: #fff;
+//       margin-top: 20px;
+//       border: 2px solid #2a5cb9;
+
+//       &:hover {
+//         border: 2px solid #2a5cb9;
+//         color: #2b5bb5;
+//         background: #edf1f8;
+//       }
+
+//       @media (max-width: 767px) {
+//         margin-top: 0px;
+//         font-size: 14px;
+//         color: #2a5cb9;
+//         background-color: #fff;
+//         text-decoration: underline;
+//         font-weight: 700;
+//         border: none;
+//         padding: 8px !important;
+//         border-radius: 10px;
+//       }
+//     }
+//   }
+// }
+
+// .yellowbox {
+//   margin: 24px 0;
+
+//   .backgroundYellow {
+//     // background-image: url("../../public/assests/home_img/Ellipse\ 1348.svg");
+//     // background-size: cover;
+//     height: 300px;
+//     width: 300px;
+//     border-radius: 100%;
+//     background: #f5c989;
+//     margin: 0 auto;
+
+//     @media (max-width: 767px) {
+//       height: 150px;
+//       width: 150px;
+//     }
+//     img {
+//       position: absolute;
+//       top: -170px !important;
+//       left: -180px !important;
+//       @media (max-width: 767px) {
+//         top: 0px !important;
+//         left: 0px !important;
+//       }
+//     }
+//     span {
+//       @media (max-width: 767px) {
+//         height: 150px !important;
+//         width: 150px !important;
+//       }
+//     }
+//   }
+
+//   .box {
+//     background: #fdf4e7;
+//     border-radius: 25px;
+//     padding: 30px;
+
+//     @media (max-width: 767px) {
+//       padding: 10px;
+//       border-radius: 15px;
+//       background-color: #fff;
+//       width: 100%;
+//     }
+
+//     p {
+//       font-family: $GiloryRegular;
+//       font-size: 14px;
+//       line-height: 18px;
+//       color: #404040;
+
+//       @media (max-width: 767px) {
+//         display: none;
+//       }
+//     }
+
+//     h6 {
+//       font-family: "DM Serif Display";
+//       font-style: normal;
+//       font-weight: 400;
+//       font-size: 24px;
+//       line-height: 41px;
+//       text-transform: capitalize;
+//       color: #000000;
+
+//       @media (max-width: 767px) {
+//         font-size: 18px;
+//         line-height: 20px;
+//         font-weight: 700;
+//       }
+//     }
+
+//     button {
+//       background: #f9deb7;
+//       border-radius: 37.5px;
+//       color: #111;
+//       margin-top: 20px;
+//       border: 2px solid #f9deb7;
+
+//       &:hover {
+//         border: 2px solid #f9deb7;
+//         color: #f5c989;
+//         background-color: #fdf4e7;
+//       }
+
+//       @media (max-width: 767px) {
+//         margin-top: 0px;
+//         font-size: 14px;
+//         padding: 8px !important;
+//         border-radius: 10px;
+//         background-color: #fff;
+//         color: #f5c989;
+//         text-decoration: underline;
+//         font-weight: 700;
+//         border: none;
+//       }
+//     }
+//   }
+// }
+
+.each {
+  display: flex;
+  flex-direction: column;
+}
+.planContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 2%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.roundedBoxes {
+  margin-top: 24px;
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  position: relative;
+}
+.imageBox {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  background-color: gray;
+  z-index: 2;
+  overflow: hidden;
+  top: 15%;
+  border-radius: 20px;
+}
+.box {
+  background: #fee7e6;
+  border-radius: 25px;
+  padding: 30px;
+  width: 300px;
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (max-width: 767px) {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #fff;
+    width: 100%;
+  }
+
+  p {
+    font-family: $GiloryRegular;
+    font-size: 14px;
+    line-height: 18px;
+    color: #404040;
 
     @media (max-width: 767px) {
-      height: 150px;
-      width: 150px;
-    }
-    img {
-      position: absolute;
-      top: 100px !important;
-      left: 0px !important;
-      @media (max-width: 767px) {
-        top: 90px !important;
-        height: 30px !important;
-        left: 20px !important;
-      }
-    }
-    span {
-      @media (max-width: 767px) {
-        height: 110px !important;
-        width: 130px !important;
-      }
+      display: none;
     }
   }
 
-  .box {
-    background: #fee7e6;
-    border-radius: 25px;
-    padding: 30px;
+  h6 {
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 41px;
+    text-transform: capitalize;
+    color: #000000;
+
+    @media (max-width: 767px) {
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+  }
+
+  button {
+    background: #f85757;
+    border-radius: 37.5px;
+    color: #fff;
+    margin-top: 20px;
+    border: 2px solid #f85757;
+
     &:hover {
-      cursor: pointer;
-    }
-
-    @media (max-width: 767px) {
-      padding: 10px;
-      border-radius: 15px;
-      background-color: #fff;
-      width: 100%;
-    }
-
-    p {
-      font-family: $GiloryRegular;
-      font-size: 14px;
-      line-height: 18px;
-      color: #404040;
-
-      @media (max-width: 767px) {
-        display: none;
-      }
-    }
-
-    h6 {
-      font-family: "DM Serif Display";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 41px;
-      text-transform: capitalize;
-      color: #000000;
-
-      @media (max-width: 767px) {
-        font-size: 18px;
-        line-height: 20px;
-        font-weight: 700;
-        margin-bottom: 8px;
-      }
-    }
-
-    button {
-      background: #f85757;
-      border-radius: 37.5px;
-      color: #fff;
-      margin-top: 20px;
+      color: #f85757;
+      background: #fef0f0;
       border: 2px solid #f85757;
-
-      &:hover {
-        color: #f85757;
-        background: #fef0f0;
-        border: 2px solid #f85757;
-      }
-
-      @media (max-width: 767px) {
-        margin-top: 0px;
-        font-size: 14px;
-        padding: 8px !important;
-        border-radius: 10px;
-        background-color: #fff;
-        color: #f85757;
-        font-weight: 500;
-        text-decoration: underline;
-        border: none;
-      }
     }
-  }
-}
-
-.bluebox {
-  margin: 24px 0;
-
-  .backgroundBlue {
-    // background-image: url("../../public/assests/home_img/Ellipse\ 1380.svg");
-    // background-size: cover;
-    height: 300px;
-    width: 300px;
-    border-radius: 100%;
-    background: #2a5cb9;
-    margin: 0 auto;
 
     @media (max-width: 767px) {
-      height: 150px;
-      width: 150px;
-      background: none;
-    }
-    span {
-      @media (max-width: 767px) {
-        height: 200px !important;
-        width: 200px !important;
-        background: none;
-      }
-    }
-  }
-
-  .box {
-    background: #edf1f8;
-    border-radius: 25px;
-    padding: 30px;
-
-    @media (max-width: 767px) {
-      padding: 10px;
-      border-radius: 15px;
-      background-color: #fff;
-      width: 100%;
-    }
-
-    p {
-      font-family: $GiloryRegular;
+      margin-top: 0px;
       font-size: 14px;
-      line-height: 18px;
-      color: #404040;
-
-      @media (max-width: 767px) {
-        display: none;
-      }
-    }
-
-    h6 {
-      font-family: "DM Serif Display";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 41px;
-      text-transform: capitalize;
-      color: #000000;
-
-      @media (max-width: 767px) {
-        font-size: 16px;
-        line-height: 20px;
-        font-weight: 700;
-      }
-    }
-
-    button {
-      background: #2b5bb5;
-      border-radius: 37.5px;
-      color: #fff;
-      margin-top: 20px;
-      border: 2px solid #2a5cb9;
-
-      &:hover {
-        border: 2px solid #2a5cb9;
-        color: #2b5bb5;
-        background: #edf1f8;
-      }
-
-      @media (max-width: 767px) {
-        margin-top: 0px;
-        font-size: 14px;
-        color: #2a5cb9;
-        background-color: #fff;
-        text-decoration: underline;
-        font-weight: 700;
-        border: none;
-        padding: 8px !important;
-        border-radius: 10px;
-      }
-    }
-  }
-}
-
-.yellowbox {
-  margin: 24px 0;
-
-  .backgroundYellow {
-    // background-image: url("../../public/assests/home_img/Ellipse\ 1348.svg");
-    // background-size: cover;
-    height: 300px;
-    width: 300px;
-    border-radius: 100%;
-    background: #f5c989;
-    margin: 0 auto;
-
-    @media (max-width: 767px) {
-      height: 150px;
-      width: 150px;
-    }
-    img {
-      position: absolute;
-      top: -170px !important;
-      left: -180px !important;
-      @media (max-width: 767px) {
-        top: 0px !important;
-        left: 0px !important;
-      }
-    }
-    span {
-      @media (max-width: 767px) {
-        height: 150px !important;
-        width: 150px !important;
-      }
-    }
-  }
-
-  .box {
-    background: #fdf4e7;
-    border-radius: 25px;
-    padding: 30px;
-
-    @media (max-width: 767px) {
-      padding: 10px;
-      border-radius: 15px;
+      padding: 8px !important;
+      border-radius: 10px;
       background-color: #fff;
-      width: 100%;
-    }
-
-    p {
-      font-family: $GiloryRegular;
-      font-size: 14px;
-      line-height: 18px;
-      color: #404040;
-
-      @media (max-width: 767px) {
-        display: none;
-      }
-    }
-
-    h6 {
-      font-family: "DM Serif Display";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 41px;
-      text-transform: capitalize;
-      color: #000000;
-
-      @media (max-width: 767px) {
-        font-size: 18px;
-        line-height: 20px;
-        font-weight: 700;
-      }
-    }
-
-    button {
-      background: #f9deb7;
-      border-radius: 37.5px;
-      color: #111;
-      margin-top: 20px;
-      border: 2px solid #f9deb7;
-
-      &:hover {
-        border: 2px solid #f9deb7;
-        color: #f5c989;
-        background-color: #fdf4e7;
-      }
-
-      @media (max-width: 767px) {
-        margin-top: 0px;
-        font-size: 14px;
-        padding: 8px !important;
-        border-radius: 10px;
-        background-color: #fff;
-        color: #f5c989;
-        text-decoration: underline;
-        font-weight: 700;
-        border: none;
-      }
+      color: #f85757;
+      font-weight: 500;
+      text-decoration: underline;
+      border: none;
     }
   }
 }
